@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css?family=Yantramanav:100');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    /*background: #b61924;*/
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('https://static.pexels.com/photos/163444/sport-treadmill-tor-route-163444.jpeg');
+    background-size: cover;
+}
+
+.intro {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    padding-top: 5%;
+    display: table;
+    z-index: 2;
+}
+
+    .intro .inner {
+        display: table-cell;
+        vertical-align: middle;
+        width: 100%;
+        max-width: none;
+    }
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 20%;
+}
+
+    .content h1 {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 600%;
+        font-weight: 300;
+        color: #E1EFE9;
+        line-height: 70%;
+        margin-top: 0.3em;
+        margin-bottom: 0.5em;
+    }
+
+    .content h2 {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 200%;
+        font-weight: 300;
+        color: #E1EFE9;
+        line-height: 70%;
+        margin-top: 0.3em;
+        margin-bottom: 0.5em;
+    }
+
+.big-logo {
+    margin-top: 0.3em;
+}
+
+.btn {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 135%;
+    font-weight: 400;
+    color: #E1EFE9;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: solid #E1EFE9;
+    padding: 10px 20px;
+    border-radius: 9px;
+    transition: all 0.2s;
+}
+
+    .btn:hover {
+        color: #CBDFD6;
+        border: solid #CBDFD6 2px;
+    }
+
+p {
+    font-size: 150%;
+    line-height: 120%;
+    font-family: sans-serif;
+}
+
+.slider {
+    height: 20px;
+}
+
+.container {
+    color: hsla(0, 0%, 100%, .5);
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 10%
+}
+
+    .container h1 {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 250%;
+        font-weight: 200;
+        color:  hsla(0, 0%, 100%, .5);
+        line-height: 5%
+    }
+
+    .container ul{
+        -webkit-padding-start: 0px;
+    }
+
+    .container li {
+        font-family: 'Roboto Condensed', sans-serif;
+        display: inline-block;
+        font-size: 1.5em;
+        list-style-type: none;
+        padding-left: 1em;
+        padding-right: 1em;
+        text-transform: uppercase;
+    }
+
+        .container li span {
+            font-family: 'Roboto Condensed', sans-serif;
+            display: block;
+            font-size: 4.5rem;
+        }
+
+.goals {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+    .goals header {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 150%;
+        font-weight: 100;
+        color: #E1EFE9;
+        line-height: 150%;
+        text-align: left;
+    }
+
+    .goals footer {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 150%;
+        font-weight: 100;
+        color: #E1EFE9;
+        line-height: 150%;
+        text-align: right;
+    }
+
+    .goals > .goal-1 {
+        padding: 2px;
+    }
+
+    .goals > .goal-2 {
+        padding: 2px;
+    }
+
+    .goals > .goal-3 {
+        padding: 2px;
+    }
+
+    .goals > .goal-1 .slider {
+        background: linear-gradient(90deg, #fff 0, #fff 6.29%, hsla(0, 0%, 100%, .3) 7.29%, hsla(0, 0%, 100%, .3));
+    }
+
+    .goals > .goal-2 .slider {
+        background-color: hsla(0, 0%, 100%, .3);
+    }
+
+
+    .goals > .goal-3 .slider {
+        background-color: hsla(0, 0%, 100%, .3);
+    }
+
+/*--- Media Queries --*/
+@media screen and (max-width: 900px) {
+    .content {
+        padding-bottom: 30%;
+    }
+
+        .content h1 {
+            font-size: 450%;
+        }
+
+    .btn {
+        font-size: 130%;
+        padding: 9px 17px;
+    }    
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        padding-bottom: 40%;
+    }
+
+        .content h1 {
+            font-size: 300%;
+        }
+
+    .btn {
+        font-size: 110%;
+        padding: 7px 17px;
+    }
+
+    p {
+        font-size: 120%;
+        line-height: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .content {
+        padding-bottom: 50%;
+    }
+
+        .content h1 {
+            font-size: 250%;
+        }
+
+    .btn {
+        font-size: 100%;
+        padding: 6px 14px;
+    }
+
+    p {
+        font-size: 100%;
+        line-height: 100%;
+    }
+
+    .goals {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+        padding-bottom: 50px;
+    }
+}
