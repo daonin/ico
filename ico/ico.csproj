@@ -96,6 +96,9 @@
   <ItemGroup>
     <Content Include="css\beeasy.css" />
     <Content Include="css\style_be.css" />
+    <Content Include="images\login-black.png" />
+    <Content Include="images\login-grey.png" />
+    <Content Include="images\login-white.png" />
     <Content Include="js\app.js" />
     <Content Include="js\countdown.js" />
     <Content Include="js\particles.js" />
@@ -117,7 +120,6 @@
     <Content Include="index.html" />
     <Content Include="js\jquery.waypoints.min.js" />
     <Content Include="js\waypoints.js" />
-    <Content Include="page.html" />
     <Content Include="style.css" />
     <Content Include="Web.config" />
   </ItemGroup>

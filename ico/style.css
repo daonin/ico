@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Yantramanav:100');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400');
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,200,100');
 
 html, body {
     margin: 0;
@@ -21,12 +20,60 @@ html, body {
     background-size: cover;
 }
 
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    transition: all 200ms ease;
+}
+
+.header-nav {
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+}
+
+.menu {
+    margin: 0 30px 0 0;
+}
+
+    .menu a {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 135%;
+        font-weight: 400;
+        text-decoration: none;
+        color: #fff;
+        margin: 0 10px;
+        line-height: 70px;
+    }
+
+.hamburger {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    color: #fff;
+}
+
+#toggle {
+    display: none;
+}
+
+.menu img {
+    height: 35px;
+    vertical-align: middle;
+    margin-left: 5%;
+}
+
+.header-backround {
+    background: rgba(50, 50, 50, 0.7);
+}
+
 .intro {
     position: relative;
     height: 100%;
     width: 100%;
     margin: auto;
-    padding-top: 5%;
     display: table;
     z-index: 2;
 }
@@ -42,17 +89,16 @@ html, body {
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
-    padding-bottom: 20%;
 }
 
     .content h1 {
         font-family: 'Roboto Condensed', sans-serif;
-        font-size: 600%;
+        font-size: 500%;
         font-weight: 300;
         color: #E1EFE9;
         line-height: 70%;
         margin-top: 0.3em;
-        margin-bottom: 0.5em;
+        margin-bottom: 0.3em;
     }
 
     .content h2 {
@@ -101,28 +147,28 @@ p {
     color: hsla(0, 0%, 100%, .5);
     text-align: center;
     margin-top: 5%;
-    margin-bottom: 10%
+    margin-bottom: 5%;
 }
 
     .container h1 {
         font-family: 'Roboto Condensed', sans-serif;
-        font-size: 250%;
+        font-size: 200%;
         font-weight: 200;
-        color:  hsla(0, 0%, 100%, .5);
-        line-height: 5%
+        color: hsla(0, 0%, 100%, .5);
+        line-height: 5%;
     }
 
-    .container ul{
+    .container ul {
         -webkit-padding-start: 0px;
     }
 
     .container li {
         font-family: 'Roboto Condensed', sans-serif;
         display: inline-block;
-        font-size: 1.5em;
+        font-size: 1.3em;
         list-style-type: none;
-        padding-left: 1em;
-        padding-right: 1em;
+        padding-left: 0.7em;
+        padding-right: 0.7em;
         text-transform: uppercase;
     }
 
@@ -136,7 +182,8 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 0 auto;
-    padding-bottom: 50px;
+    padding-top: 7%;
+    padding-bottom: 3%;
 }
 
     .goals header {
@@ -182,30 +229,59 @@ p {
         background-color: hsla(0, 0%, 100%, .3);
     }
 
+.about-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+}
+
+    .about-block p {
+        padding: 5%;
+    }
+
 /*--- Media Queries --*/
 @media screen and (max-width: 900px) {
     .content {
-        padding-bottom: 30%;
+        
     }
 
         .content h1 {
             font-size: 450%;
         }
 
+        .content h2 {
+            font-size: 180%;
+        }
+
+    .big-logo {
+        height: 80px
+    }
+
     .btn {
         font-size: 130%;
         padding: 9px 17px;
-    }    
+    }
+
+    .container h1 {
+        font-size: 250%;
+    }
 }
 
 @media screen and (max-width: 768px) {
     .content {
-        padding-bottom: 40%;
+        
     }
 
         .content h1 {
             font-size: 300%;
         }
+        .content h2 {
+            font-size: 150%;
+        }
+
+    .big-logo {
+        height: 60px
+    }
 
     .btn {
         font-size: 110%;
@@ -216,20 +292,88 @@ p {
         font-size: 120%;
         line-height: 100%;
     }
+
+    .container h1 {
+        font-size: 200%;
+    }
+
+    .about-block {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+    }
+
+    .menu a {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 100%;
+    }
+
+    .menu img {
+    height: 25px;
+    vertical-align: middle;
+    margin-left: 3%;
 }
 
-@media screen and (max-width: 480px) {
+    .goals header {
+        font-size: 130%;
+        line-height: 130%;
+    }
+
+    .goals footer {
+        font-size: 130%;
+        line-height: 130%;
+    }
+
+    
+}
+
+@media screen and (max-width: 500px) {
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        width: 26px;
+        float: right;
+        line-height: 40px;
+    }
+
+    .header-nav {
+        height: 40px;
+        line-height: 40px;
+    }
+
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+
+        .menu a {
+            clear: right;
+            display: block;
+            background: #ccc;
+            border-bottom: 1px solid #CBDFD6;
+            margin: 0;
+        }
+
+    #toggle:checked + .menu {
+        display: block;
+    }
+
     .content {
-        padding-bottom: 50%;
+        
     }
 
         .content h1 {
-            font-size: 250%;
+            font-size: 200%;
+        }
+
+        .content h2 {
+            font-size: 120%;
         }
 
     .btn {
-        font-size: 100%;
-        padding: 6px 14px;
+        font-size: 80%;
+        padding: 5px 12px;
     }
 
     p {
@@ -241,6 +385,42 @@ p {
         display: grid;
         grid-template-columns: 1fr;
         margin: 0 auto;
-        padding-bottom: 50px;
+        padding-top: 3%;
+    }
+
+    .goals header {
+        font-size: 110%;
+        line-height: 110%;
+    }
+
+    .goals footer {
+        font-size: 110%;
+        line-height: 110%;
+    }
+
+    .slider {
+    height: 12px;
+}
+
+    .container h1 {
+        font-size: 130%;
+    }
+
+    .container h2 {
+        font-size: 120%;
+    }
+
+    .container li {
+        font-size: 0.8rem;
+    }
+
+    .container li span {
+        font-size: 1.8rem;
+    }
+
+    .about-block {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0 auto;
     }
 }
