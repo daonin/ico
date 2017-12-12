@@ -94,14 +94,20 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="css\beeasy.css" />
-    <Content Include="css\style_be.css" />
+    <Content Include="config\main.config.js" />
+    <Content Include="images\candy.shader-bg.jpg" />
+    <Content Include="images\darkness.shader-bg.jpg" />
+    <Content Include="images\fire.shader-bg.jpg" />
+    <Content Include="images\ice.shader-bg.jpg" />
+    <Content Include="images\light.shader-bg.jpg" />
     <Content Include="images\login-black.png" />
     <Content Include="images\login-grey.png" />
     <Content Include="images\login-white.png" />
-    <Content Include="js\app.js" />
-    <Content Include="js\countdown.js" />
-    <Content Include="js\particles.js" />
+    <Content Include="images\nature.shader-bg.jpg" />
+    <Content Include="images\peach.shader-bg.jpg" />
+    <Content Include="images\sea.shader-bg.jpg" />
+    <Content Include="js\flat-surface-shader.js" />
+    <Content Include="js\shader.js" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -114,13 +120,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="css\animate.css" />
-    <Content Include="css\waypoints.css" />
     <Content Include="images\header-logo.png" />
     <Content Include="index.html" />
-    <Content Include="js\jquery.waypoints.min.js" />
-    <Content Include="js\waypoints.js" />
-    <Content Include="style.css" />
+    <Content Include="css\style.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

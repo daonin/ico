@@ -3,126 +3,57 @@
 <head>
     <title>Vikium ICO</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-    <link href="css/animate.css" rel="stylesheet" />
-    <link href="css/waypoints.css" rel="stylesheet" />
-    <script src="js/jquery.waypoints.min.js" type="text/javascript"></script>
-    <script src="js/waypoints.js" type="text/javascript"></script>
-    <script src="js/countdown.js" type="text/javascript"></script>
-
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    
 </head>
-<body>
-    <div class="header">
-        <div class="header-nav">
-            <label for="toggle" class="hamburger">&#9776;</label>
-            <input type="checkbox" id="toggle"/>
-            <div class="menu">
-                <a href="#about">О проекте</a>
-                <a href="#ico">ICO</a>
-                <a href="#contacts">Контакты</a>
-                <a href="#">Белая бумага</a>
-                <a href="#">
-                    <img src="images/login-white.png" />
-                </a>
-            </div>
-        </div>        
+<body class="theme-darkness">
+    <!-- Background container -->
+    <div id="background-container" class="background-container">
+        <div id="background-output" class="background-output"></div>
+        <div id="vignette" class="background-vignette"></div>
+        <div id="noise" class="background-noise"></div>
     </div>
-    <div id="particles-js">
-        <script src="js/particles.js" type="text/javascript"></script>
-        <script src="js/app.js" type="text/javascript"></script>
-    </div>
-    <section class="intro">
+    <!-- /Background container -->
+
+    <div class="container-fluid intro">
         <div class="inner">
-            <div class="content">
-                <section class="os-animation" data-os-animation="bounceInUp" data-os-animation-delay="0s">
-                    <img class="big-logo" src="images/header-logo.png" />
-                    <h1>Vikium</h1>
-                    <h2>Криптовалютная экостистема для умных людей</h2>
-                    <div class="goals">
-                        <div class="goal-1">
-                            <header> Early-bird</header>
-                            <div class="slider"></div>
-                            <footer>Цель - 250 ETH</footer>
-                        </div>
-                        <div class="goal-2">
-                            <header> Pre-ICO</header>
-                            <div class="slider" data-name="current-goal-slider"></div>
-                            <footer> <span>5000</span> ETH</footer>
-                        </div>
-                        <div class="goal-3">
-                            <header> ICO</header>
-                            <div class="slider"></div>
-                            <footer> 20 000 ETH</footer>
-                        </div>
-                    </div>
-                </section>
-                <section class="os-animation" data-os-animation="bounceInUp" data-os-animation-delay="0.1s">
-                    <div class="container">
-                        <h1 id="head">До конца пресейла осталось</h1>
-                        <ul>
-                            <li><span id="days"></span>Дни</li>
-                            <li><span id="hours"></span>часы</li>
-                            <li><span id="minutes"></span>минуты</li>
-                            <li><span id="seconds"></span>секунды</li>
-                        </ul>
-                    </div>
-                </section>
-                <section class="os-animation" data-os-animation="bounceInUp" data-os-animation-delay="0.1s">
-                    <a class="btn" href="#">Участвовать</a>
-                </section>
+            <div class="container-fluid">
+                <!-- Header -->
+                <div class="row">
+                    <h1 class="col-sm-8 offset-sm-2 text-center">Vikium</h1>
+                </div>
+                <!-- /Header -->
+                <!-- Description -->
+                <div class="row">
+                    <p class="col-sm-8 offset-sm-2 text-center">Описание ICO, которое будет самым невероятным и чудесным, божественным и изумительным, потрясающим и сногсшибательным! Оно воплотит в жизнь все ваши мечты и надежды! Приходите к нам!</p>
+                </div>
+                <!-- /Description -->
             </div>
         </div>
-    </section>
-    <section class="about-block" id="about">
-        <div class="os-animation" data-os-animation="bounceInLeft" data-os-animation-delay="0.1s">
-            <p>
-                One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in
-                his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head
-                a little he could see his brown belly, slightly domed and divided by arches into stiff sections.
-                The bedding was hardly able to cover it and seemed ready to slide off any moment. His many
-                legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he
-                looked. "What's happened to me?" he thought. It wasn't a dream. His room, a proper human room
-                although a little too small, lay peacefully between its four familiar walls. A collection of
-                textile samples lay spread out on the table - Samsa was a travelling salesman - and above it
-                there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice,
-                gilded frame. It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a
-                heavy fur muff that covered the whole of her lower arm towards the viewer. Gregor then turned to
-                look out the window at the dull weather. Drops
-            </p>
+    </div>
+    <div class="container-fluid about">
+        <div class="row">
+
         </div>
-        <div class="os-animation" data-os-animation="bounceInRight" data-os-animation-delay="0.2s">
-            <p>
-                One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in
-                his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head
-                a little he could see his brown belly, slightly domed and divided by arches into stiff sections.
-                The bedding was hardly able to cover it and seemed ready to slide off any moment. His many
-                legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he
-                looked. "What's happened to me?" he thought. It wasn't a dream. His room, a proper human room
-                although a little too small, lay peacefully between its four familiar walls. A collection of
-                textile samples lay spread out on the table - Samsa was a travelling salesman - and above it
-                there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice,
-                gilded frame. It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a
-                heavy fur muff that covered the whole of her lower arm towards the viewer. Gregor then turned to
-                look out the window at the dull weather. Drops
-            </p>
+    </div>
+    <div class="container-fluid ico">
+        <div class="row">
+
         </div>
-    </section>
-    <section class="ico-block" id="ico">
-        <div class="os-animation" data-os-animation="bounceInLeft" data-os-animation-delay="0.1s">
-            <p>
-                ICO
-            </p>
-        </div>        
-    </section>
-    <section class="contacts-block" id="contacts">
-        <div class="os-animation" data-os-animation="bounceInRight" data-os-animation-delay="0.2s">
-            <p>
-                КОНТАКТЫ
-            </p>
+    </div>
+    <div class="container-fluid contact">
+        <div class="row">
+
         </div>
-    </section>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/flat-surface-shader.js"></script>
+    <script src="config/main.config.js"></script>
+    <script src="js/shader.js"></script>
 </body>
 </html>
