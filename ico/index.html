@@ -10,7 +10,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     
 </head>
-<body class="theme-darkness">
+<body class="theme-light">
     <!-- Background container -->
     <div id="background-container" class="background-container">
         <div id="background-output" class="background-output"></div>
@@ -19,7 +19,7 @@
     </div>
     <!-- /Background container -->
 
-    <div class="container-fluid intro">
+    <div class="container-fluid intro" id="intro">
         <div class="inner">
             <div class="container-fluid">
                 <!-- Header -->
@@ -33,6 +33,30 @@
                 </div>
                 <!-- /Description -->
             </div>
+            <!-- Countdown -->
+            <div class="countdown" id="countdown">
+                <div class="container">
+                    <div class="row">
+                        <div class="countdown-item col-sm-3 col-xs-6">
+                            <div class="countdown-number" id="countdown-days"></div>
+                            <div class="countdown-label">дни</div>
+                        </div>
+                        <div class="countdown-item col-sm-3 col-xs-6">
+                            <div class="countdown-number" id="countdown-hours"></div>
+                            <div class="countdown-label">часы</div>
+                        </div>
+                        <div class="countdown-item col-sm-3 col-xs-6">
+                            <div class="countdown-number" id="countdown-minutes"></div>
+                            <div class="countdown-label">минуты</div>
+                        </div>
+                        <div class="countdown-item col-sm-3 col-xs-6">
+                            <div class="countdown-number" id="countdown-seconds"></div>
+                            <div class="countdown-label">секунды</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Countdown -->
         </div>
     </div>
     <div class="container-fluid about">
@@ -53,6 +77,7 @@
 
     <!-- Scripts -->
     <script src="js/flat-surface-shader.js"></script>
+    <script src="js/jquery.countdown.js"></script>
     <script src="config/main.config.js"></script>
     <script src="js/shader.js"></script>
 </body>

@@ -108,6 +108,7 @@
     <Content Include="images\peach.shader-bg.jpg" />
     <Content Include="images\sea.shader-bg.jpg" />
     <Content Include="js\flat-surface-shader.js" />
+    <Content Include="js\jquery.countdown.js" />
     <Content Include="js\shader.js" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
