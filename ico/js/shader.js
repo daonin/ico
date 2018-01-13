@@ -6,7 +6,7 @@ $(function() {
 
     // Background
 
-    var canvas = document.createElement('canvas');
+    var canvas = document.createElement('canvas0');
 
     backgroundEnabled = canvas.getContext && canvas.getContext('2d') && $('#background-container').css('display') != 'none';
 

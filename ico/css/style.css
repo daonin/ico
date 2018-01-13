@@ -18,6 +18,10 @@ html, body {
     right: 0;
     top: 0;
     bottom: 0;
+    background-image: url(/images/bgrnd.png), linear-gradient(115deg, #6039aa, #1c1e33);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%
 }
 
 .background-vignette,

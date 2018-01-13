@@ -96,6 +96,7 @@
   <ItemGroup>
     <Content Include="config\main.config.js" />
     <Content Include="css\style.css" />
+    <Content Include="images\bgrnd.png" />
     <Content Include="images\candy.shader-bg.jpg" />
     <Content Include="images\darkness.shader-bg.jpg" />
     <Content Include="images\fire.shader-bg.jpg" />
