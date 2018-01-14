@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Vikium ICO</title>
+    <title>Wikium ICO</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
@@ -12,40 +12,61 @@
     <script src="js/jquery.waypoints.min.js" type="text/javascript"></script>
     <script src="js/waypoints.js" type="text/javascript"></script>
     <script src="js/countdown.js" type="text/javascript"></script>
-
+    <script src="js/functions.js" type="text/javascript"></script>
+    <script src="js/translation.js" type="text/javascript"></script>
 </head>
 <body>
     <div class="header">
+        <div class="header-left">
+            <a class="header-logo" href="/">
+                <img class="main-logo" src="/images/header-logo.svg" alt="Викиум тренажеры для мозга" width="150">
+            </a>
+        </div>
         <div class="header-nav">
             <label for="toggle" class="hamburger">&#9776;</label>
-            <input type="checkbox" id="toggle"/>
+            <input type="checkbox" id="toggle" />
             <div class="menu">
-                <a href="#about">О проекте</a>
-                <a href="#ico">ICO</a>
-                <a href="#contacts">Контакты</a>
-                <a href="#">Белая бумага</a>
-                <a href="#">
-                    <img src="images/login-white.png" />
-                </a>
+                <a href="#about" class="lang" key="menu_about">О проекте</a>
+                <a href="#ico" class="lang" key="menu_ico">ICO</a>
+                <a href="#contacts" class="lang" key="menu_contacts">Контакты</a>
+                <a href="#" class="lang" key="menu_whitepaper">Белая бумага</a>
             </div>
-        </div>        
+        </div>
+        <div class="header-right">
+            <div class="landing-header__lang">
+                <form id="change-lang" action="/user/change_locale" method="get">
+                    <div id="lang-select" class="custom-select  custom-select--lang  custom-select--closed">
+                        <span class="custom-select__placeholder">
+                            Русский
+                        </span>
+                        <div class="custom-select__items">
+                            <input class="custom-select__item" type="radio" name="locale" value="ru" id="ru" checked>
+                            <label class="custom-select__item-label" for="ru">Русский</label>
+                            <input class="custom-select__item" type="radio" name="locale" value="en" id="en">
+                            <label class="custom-select__item-label" for="en">English</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
     <div id="particles-js">
-        <script src="js/particles.js" type="text/javascript"></script>
-        <script src="js/app.js" type="text/javascript"></script>
+        <!--<script src="js/particles.js" type="text/javascript"></script>
+        <script src="js/app.js" type="text/javascript"></script>-->
     </div>
     <section class="intro">
         <div class="inner">
             <div class="content">
                 <section class="os-animation" data-os-animation="bounceInUp" data-os-animation-delay="0s">
-                    <img class="big-logo" src="images/header-logo.png" />
-                    <h1>Vikium</h1>
-                    <h2>Криптовалютная экостистема для умных людей</h2>
+                    <h1 class="lang" key="intro-title-1">
+                        Децентрализованная платформа                        
+                    </h1>
+                    <h1><span class="lang text-bold" key="intro-title-2">для тренировки мозга</span></h1>
                     <div class="goals">
                         <div class="goal-1">
                             <header> Early-bird</header>
                             <div class="slider"></div>
-                            <footer>Цель - 250 ETH</footer>
+                            <footer class="lang" >Цель - 250 ETH</footer>
                         </div>
                         <div class="goal-2">
                             <header> Pre-ICO</header>
@@ -61,17 +82,17 @@
                 </section>
                 <section class="os-animation" data-os-animation="bounceInUp" data-os-animation-delay="0.1s">
                     <div class="container">
-                        <h1 id="head">До конца пресейла осталось</h1>
+                        <h1 id="head" class="lang" key="intro-presale-finish">До конца пресейла осталось</h1>
                         <ul>
-                            <li><span id="days"></span>Дни</li>
-                            <li><span id="hours"></span>часы</li>
-                            <li><span id="minutes"></span>минуты</li>
-                            <li><span id="seconds"></span>секунды</li>
+                            <li><span id="days"></span><my-span class="lang countdown-tag" key="conuntdown_days">Дни</my-span></li>
+                            <li><span id="hours"></span><my-span class="lang countdown-tag" key="conuntdown_hours">часы</my-span></li>
+                            <li><span id="minutes"></span><my-span class="lang countdown-tag" key="conuntdown_mins">минуты</my-span></li>
+                            <li><span id="seconds"></span><my-span class="lang countdown-tag" key="conuntdown_secs">секунды</my-span></li>
                         </ul>
                     </div>
                 </section>
                 <section class="os-animation" data-os-animation="bounceInUp" data-os-animation-delay="0.1s">
-                    <a class="btn" href="#">Участвовать</a>
+                    <a class="btn btn--blue lang" href="#" key="btn_participate">Участвовать</a>
                 </section>
             </div>
         </div>
@@ -115,7 +136,7 @@
             <p>
                 ICO
             </p>
-        </div>        
+        </div>
     </section>
     <section class="contacts-block" id="contacts">
         <div class="os-animation" data-os-animation="bounceInRight" data-os-animation-delay="0.2s">
