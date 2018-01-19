@@ -4,7 +4,8 @@
 
         'menu_about': 'About',
         'menu_ico': 'ICO',
-        'menu_contacts': 'Contacts',
+        'menu_roadmap': 'Roadmap',
+        'menu_team': 'Team',
         'menu_whitepaper': 'WhitePaper',
 
         'conuntdown_days': 'days',
@@ -14,6 +15,7 @@
 
         'intro-title-1': 'Decentralised platform',
         'intro-title-2': 'for brain-fitness',
+        'intro-subtitle': 'Invest in your development.',
         'intro-presale-finish': 'Presale ends in',
         'btn_participate': 'Participate'
     },
@@ -22,8 +24,9 @@
 
         'menu_about': 'О проекте',
         'menu_ico': 'ICO',
-        'menu_contacts': 'Контакты',
-        'menu_whitepaper': 'Белая Бумага',
+        'menu_roadmap': 'Дорожная карта',
+        'menu_team': 'Команда',
+        'menu_whitepaper': 'Белая бумага',
 
         'conuntdown_days': 'дни',
         'conuntdown_hours': 'часы',
@@ -32,6 +35,7 @@
 
         'intro-title-1': 'Децентрализованная платформа',
         'intro-title-2': 'для тренировки мозга',
+        'intro-subtitle': 'Инвестируйте в свое развитие.',
         'intro-presale-finish': 'До конца пресейла осталось',
         'btn_participate': 'Участвовать'
     }

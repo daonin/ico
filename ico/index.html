@@ -3,50 +3,74 @@
 <head>
     <title>Wikium ICO</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="https://wikium.ru/img/favicon/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://wikium.ru/img/favicon/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://wikium.ru/img/favicon/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://wikium.ru/img/favicon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://wikium.ru/img/favicon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="https://wikium.ru/img/favicon/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://wikium.ru/img/favicon/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://wikium.ru/img/favicon/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://wikium.ru/img/favicon/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="https://wikium.ru/img/favicon/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="https://wikium.ru/img/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="https://wikium.ru/img/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="https://wikium.ru/img/favicon/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="https://wikium.ru/img/favicon/favicon-128.png" sizes="128x128" />
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
     <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     <link href="css/animate.css" rel="stylesheet" />
     <link href="css/waypoints.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-reboot.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-grid.min.css" rel="stylesheet" />
     <script src="js/jquery.waypoints.min.js" type="text/javascript"></script>
     <script src="js/waypoints.js" type="text/javascript"></script>
     <script src="js/countdown.js" type="text/javascript"></script>
     <script src="js/functions.js" type="text/javascript"></script>
     <script src="js/translation.js" type="text/javascript"></script>
+    <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/Chart.min.js" type="text/javascript"></script>
+    <script src="js/chart_gen.js" type="text/javascript"></script>
 </head>
 <body>
-    <div class="header">
-        <div class="header-left">
-            <a class="header-logo" href="/">
-                <img class="main-logo" src="/images/header-logo.svg" alt="Викиум тренажеры для мозга" width="150">
-            </a>
-        </div>
-        <div class="header-nav">
-            <label for="toggle" class="hamburger">&#9776;</label>
-            <input type="checkbox" id="toggle" />
-            <div class="menu">
-                <a href="#about" class="lang" key="menu_about">О проекте</a>
-                <a href="#ico" class="lang" key="menu_ico">ICO</a>
-                <a href="#contacts" class="lang" key="menu_contacts">Контакты</a>
-                <a href="#" class="lang" key="menu_whitepaper">Белая бумага</a>
+    <div class="header container-wide">
+        <div class="row">
+            <div class="header-left col-12  col-sm-6 col-md-3">
+                <a class="header-logo" href="/">
+                    <img class="main-logo" src="/images/header-logo.svg" alt="Викиум тренажеры для мозга" width="150">
+                </a>
             </div>
-        </div>
-        <div class="header-right">
-            <div class="landing-header__lang">
-                <form id="change-lang" action="/user/change_locale" method="get">
-                    <div id="lang-select" class="custom-select  custom-select--lang  custom-select--closed">
-                        <span class="custom-select__placeholder">
-                            Русский
-                        </span>
-                        <div class="custom-select__items">
-                            <input class="custom-select__item" type="radio" name="locale" value="ru" id="ru" checked>
-                            <label class="custom-select__item-label" for="ru">Русский</label>
-                            <input class="custom-select__item" type="radio" name="locale" value="en" id="en">
-                            <label class="custom-select__item-label" for="en">English</label>
+            <div class="header-nav col-12  col-sm-6 col-md-6">
+                <label for="toggle" class="hamburger">&#9776;</label>
+                <input type="checkbox" id="toggle" />
+                <div class="menu w-opacity-5">
+                    <a href="#about" class="lang menuitem" key="menu_about">О проекте</a>
+                    <a href="#ico" class="lang menuitem" key="menu_ico">ICO</a>
+                    <a href="#contacts" class="lang menuitem" key="menu_roadmap">Дорожная карта</a>
+                    <a href="#contacts" class="lang menuitem" key="menu_team">Команда</a>
+                    <a href="#" class="lang menuitem" key="menu_whitepaper">Белая бумага</a>
+                </div>
+            </div>
+            <div class="header-right col-12  col-sm-6 col-md-3">
+                <div class="landing-header__lang">
+                    <form id="change-lang" action="/user/change_locale" method="get">
+                        <div id="lang-select" class="w-custom-select  custom-select--lang  custom-select--closed">
+                            <span class="custom-select__placeholder">
+                                Русский
+                            </span>
+                            <div class="custom-select__items">
+                                <input class="custom-select__item" type="radio" name="locale" value="ru" id="ru" checked>
+                                <label class="custom-select__item-label" for="ru">Русский</label>
+                                <input class="custom-select__item" type="radio" name="locale" value="en" id="en">
+                                <label class="custom-select__item-label" for="en">English</label>
+                            </div>
                         </div>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
@@ -58,11 +82,12 @@
         <div class="inner">
             <div class="content">
                 <section class="os-animation" data-os-animation="bounceInUp" data-os-animation-delay="0s">
-                    <h1 class="lang" key="intro-title-1">
-                        Децентрализованная платформа                        
+                    <h1 class="lang ease4" key="intro-title-1">
+                        Децентрализованная <span class="w-opacity-5">платформа</span>
                     </h1>
-                    <h1><span class="lang text-bold" key="intro-title-2">для тренировки мозга</span></h1>
-                    <div class="goals">
+                    <h1><span class="lang text-bold ease4" key="intro-title-2">для тренировки мозга</span></h1>
+                    <h2 calss="lang ease4 w-opacity-5" key="intro-subtitle">Инвестируйте в свое развитие.</h2>
+                    <!--<div class="goals">
                         <div class="goal-1">
                             <header> Early-bird</header>
                             <div class="slider"></div>
@@ -78,9 +103,58 @@
                             <div class="slider"></div>
                             <footer> 20 000 ETH</footer>
                         </div>
+                    </div>-->
+                    <div class="section-top__raised" data-v-4f0cf69a>
+                        <div class="section-top__raised-top" data-v-4f0cf69a>
+                            <div class="raised" data-v-4f0cf69a>
+                                <div class="raised__title" data-v-4f0cf69a>Итого собрано</div>
+                                <div class="raised__text" data-v-4f0cf69a>253 545,5$</div>
+                            </div>
+                            <div class="timer" data-v-0f270090 data-v-4f0cf69a>
+                                <div class="timer__title" data-v-0f270090>До начала ICO</div>
+                                <div class="timer__block" data-v-0f270090>
+                                    <div id="timerNumber" class="timer__numbers" data-v-0f270090>
+                                        <div data-v-0f270090>
+                                            <div id="days" data-v-0f270090></div><span data-v-0f270090>дня</span>
+                                        </div>
+                                        <div data-v-0f270090>
+                                            <div id="hours" data-v-0f270090></div><span data-v-0f270090>часов</span>
+                                        </div>
+                                        <div data-v-0f270090>
+                                            <div id="minutes" data-v-0f270090></div><span data-v-0f270090>минут</span>
+                                        </div>
+                                        <div data-v-0f270090>
+                                            <div id="seconds" data-v-0f270090></div><span data-v-0f270090>секунд</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-top__raised-lineMob" data-v-4f0cf69a>
+                            <div class="section-top__raised-line" data-v-4f0cf69a>
+                                <div class="line" data-v-4f0cf69a><span data-v-4f0cf69a></span></div>
+                                <div class="line__block line__block-1" data-v-4f0cf69a>0 <span data-v-4f0cf69a>Start</span></div>
+                                <div class="line__block line__block-2" data-v-4f0cf69a>$2 M <span data-v-4f0cf69a>Soft cap</span></div>
+                                <div class="line__block line__block-3" data-v-4f0cf69a>$5 M <span data-v-4f0cf69a>Exchange</span></div>
+                                <div class="line__block line__block-4" data-v-4f0cf69a>$10 M <span data-v-4f0cf69a>Custom blockchain</span></div>
+                                <div class="line__block line__block-5" data-v-4f0cf69a>$14 M <span data-v-4f0cf69a>Liquidity provision</span></div>
+                                <div class="line__block line__block-6" data-v-4f0cf69a>$19 M <span data-v-4f0cf69a>Hedge fund</span></div>
+                            </div>
+                        </div>
+                        <div style="height: 15px;"></div>
+                        <div class="section-top__stages-lineMob" data-v-4f0cf69a>
+                            <div class="section-top__stages-line" data-v-4f0cf69a>
+                                <div class="line-stages" data-v-4f0cf69a><span data-v-4f0cf69a></span></div>
+                                <div class="line__block line__block-stage-1" data-v-4f0cf69a>01.02.2018<span data-v-4f0cf69a>Early-bird</span></div>
+                                <div class="line__block line__block-stage-2" data-v-4f0cf69a>01.03.2018<span data-v-4f0cf69a>Pre-ICO</span></div>
+                                <div class="line__block line__block-stage-3" data-v-4f0cf69a>01.04.2018<span data-v-4f0cf69a>ICO</span></div>
+                                <div class="line__block line__block-stage-4" data-v-4f0cf69a>01.06.2018<span data-v-4f0cf69a>Finish</span></div>
+                            </div>
+                        </div>
                     </div>
+                    <a class="w-btn w-btn--blue lang" href="#" key="btn_participate">Участвовать</a>
                 </section>
-                <section class="os-animation" data-os-animation="bounceInUp" data-os-animation-delay="0.1s">
+                <!--<section class="os-animation" data-os-animation="bounceInUp" data-os-animation-delay="0.1s">
                     <div class="container">
                         <h1 id="head" class="lang" key="intro-presale-finish">До конца пресейла осталось</h1>
                         <ul>
@@ -90,10 +164,8 @@
                             <li><span id="seconds"></span><my-span class="lang countdown-tag" key="conuntdown_secs">секунды</my-span></li>
                         </ul>
                     </div>
-                </section>
-                <section class="os-animation" data-os-animation="bounceInUp" data-os-animation-delay="0.1s">
-                    <a class="btn btn--blue lang" href="#" key="btn_participate">Участвовать</a>
-                </section>
+                </section>-->
+                <section class="os-animation" data-os-animation="bounceInUp" data-os-animation-delay="0.1s"></section>
             </div>
         </div>
     </section>
@@ -132,10 +204,170 @@
         </div>
     </section>
     <section class="ico-block" id="ico">
-        <div class="os-animation" data-os-animation="bounceInLeft" data-os-animation-delay="0.1s">
-            <p>
-                ICO
-            </p>
+        <div class="os-animation" data-os-animation="bounceInLeft" data-os-animation-delay="0.1s" style="width: 40%">
+            <canvas id="tokenChart"></canvas>
+        </div>
+    </section>
+    <section class="roadmap-section" id="roadmap">
+        <div class="row example-split d-flex justify-content-center">
+            <div class="split-wrapper">
+                <ul class="timeline-new timeline-split">
+                    <li class="timeline-item period period-start">
+                        <div class="timeline-info open-sans-semibold"></div>
+                        <div class="timeline-marker">
+                            <div class="before"></div>
+                            <div class="after"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <p class="timeline-title open-sans-bold flag">2016</p>
+                        </div>
+                    </li>
+                    <li class="timeline-item">
+                        <div class="timeline-info"><span>2-3, квартал</span></div>
+                        <div class="timeline-marker">
+                            <div class="before"></div>
+                            <div class="after"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-title open-sans-semibold">Изучение потребностей рынка</div>
+                            <ul>
+                                <li>Анализ потребностей бизнеса и покупателей</li>
+                                <li>Привлечение ранних инвесторов для создания тестовой версии продукта – 200.000 долларов США</li>
+                                <li>Тестирование запуска бизнеса на международном рынке</li>
+                                <li>Привлечение первых магазинов к сотрудничеству. Формирование стратегии вывода бизнеса на международный рынок</li>
+                                <li>Дизайн-проект маркетплейса. Запуск первых магазинов на международном рынке. Решение вопросов логистики</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="timeline-item">
+                        <div class="timeline-info"><span>4, квартал</span></div>
+                        <div class="timeline-marker">
+                            <div class="before"></div>
+                            <div class="after"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-title open-sans-semibold">Начало разработки продукта</div>
+                            <ul>
+                                <li>Решение вопросов международного маркетинга</li>
+                                <li>Решение вопросов мультиязычной поддержки 24/7</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="timeline-item period">
+                        <div class="timeline-info"></div>
+                        <div class="timeline-marker">
+                            <div class="before"></div>
+                            <div class="after"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <p class="timeline-title open-sans-bold flag">2017</p>
+                        </div>
+                    </li>
+                    <li class="timeline-item">
+                        <div class="timeline-info"><span>1-2, квартал</span></div>
+                        <div class="timeline-marker">
+                            <div class="before"></div>
+                            <div class="after"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-title open-sans-semibold">Ранняя версия продукта</div>
+                            <ul>
+                                <li>Разработка первой версии магазина</li>
+                                <li>Подготовка использования блокчейн-технологии в проекте</li>
+                                <li>Начало работы над Whitepaper</li>
+                                <li>Привлечение магазинов к тестированию платформы</li>
+                                <li>Знакомство магазинов с потенциалом платформы</li>
+                                <li>Конструктор магазина</li>
+                                <li>Общий продуктовый каталог</li>
+                                <li>Базовый торговый функционал</li>
+                                <li>Второй раунд финансирования (300 000 долл. США)</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="timeline-item">
+                        <div class="timeline-info"><span>3, квартал</span></div>
+                        <div class="timeline-marker">
+                            <div class="before"></div>
+                            <div class="after"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-title open-sans-semibold">Подготовка к продаже токенов</div>
+                            <ul>
+                                <li>Альфа-версия продукта</li>
+                                <li>Начало маркетинговых кампаний по продаже токенов</li>
+                                <li>Организация сообщества Storiqa</li>
+                                <li>Предпродажа токенов</li>
+                                <li>Презентация проекта ранним держателям токенов</li>
+                                <li>Привлечение финансирования на стадии предпродажи (500 000 долларов США)</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="timeline-item">
+                        <div class="timeline-info"><span>4, квартал</span></div>
+                        <div class="timeline-marker">
+                            <div class="before"></div>
+                            <div class="after"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-title open-sans-semibold">Продажа токенов</div>
+                            <ul>
+                                <li>Презентация основного функционала магазинам</li>
+                                <li>Презентация проекта держателям токенов</li>
+                                <li>Старт привлечения капитала для вывода продукта на рынок</li>
+                                <li>Презентация проекта держателям токенов на международном уровне</li>
+                                <li>Демоверсия продукта</li>
+                                <li>Завершение продажи токенов</li>
+                                <li>Прототип продукта</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="timeline-item period">
+                        <div class="timeline-info"></div>
+                        <div class="timeline-marker">
+                            <div class="before"></div>
+                            <div class="after"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <p class="timeline-title open-sans-bold flag">2018</p>
+                        </div>
+                    </li>
+                    <li class="timeline-item">
+                        <div class="timeline-info"><span>1-2, квартал</span></div>
+                        <div class="timeline-marker">
+                            <div class="before"></div>
+                            <div class="after"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-title open-sans-semibold">Оплата криптовалютой и внедрение смарт-контрактов</div>
+                            <ul>
+                                <li>Прием платежей в криптовалюте. Внутренняя система обмена валюты и мультивалютный цифровой кошелек</li>
+                                <li>Открытие первых точек верификации Storiqa</li>
+                                <li>Запуск системы складского учета</li>
+                                <li>Смарт-контракты, интегрированные с системами логистики</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="timeline-item">
+                        <div class="timeline-info"><span>3-4, квартал</span></div>
+                        <div class="timeline-marker">
+                            <div class="before"></div>
+                            <div class="after"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-title"><b>Эффективное продвижение и интеграция</b></div>
+                            <ul>
+                                <li>Разблокировка 5% фонда развития</li>
+                                <li>Эффективные инструменты продвижения</li>
+                                <li>Разработка мобильных приложений</li>
+                                <li>Локализация на дополнительные языки</li>
+                                <li>Запуск внутренней CPA-сети для лидеров мнений</li>
+                                <li>Разблокировка 5% средств фонда развития</li>
+                                <li>Разработка дополнительного функционала&nbsp;&amp; интеграция с сторонними сервисами</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
     <section class="contacts-block" id="contacts">

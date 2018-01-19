@@ -95,7 +95,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\beeasy.css" />
+    <Content Include="css\bootstrap-grid.min.css" />
+    <Content Include="css\bootstrap-reboot.min.css" />
+    <Content Include="css\bootstrap.min.css" />
     <Content Include="css\style_be.css" />
+    <Content Include="images\road.png" />
     <Content Include="images\bgrnd.png" />
     <Content Include="images\header-logo--international.svg" />
     <Content Include="images\header-logo.svg" />
@@ -103,7 +107,12 @@
     <Content Include="images\login-black.png" />
     <Content Include="images\login-grey.png" />
     <Content Include="images\login-white.png" />
+    <Content Include="images\signs.png" />
     <Content Include="js\app.js" />
+    <Content Include="js\bootstrap.bundle.min.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\Chart.min.js" />
+    <Content Include="js\chart_gen.js" />
     <Content Include="js\countdown.js" />
     <Content Include="js\functions.js" />
     <Content Include="js\particles.js" />
