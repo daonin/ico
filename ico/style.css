@@ -286,7 +286,7 @@ html, body {
 }
 
 .header-backround {
-    background: rgba(50, 50, 50, 0.85);
+    background: rgba(50, 50, 50, 1);
 }
 
 .intro {
@@ -906,11 +906,33 @@ p {
         -webkit-margin-after: 0px;
     }
 
+
+/*--- About section ---*/
+.about-section {
+    position: relative;
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+.about-section .brain-img {
+    background: url(/images/brain_500.png) no-repeat;
+    background-size: contain;
+}
+
+.about-section p {
+    font-size: 16px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    line-height: 1.5;
+    margin-top: 30px;
+}
+
+/*--- About section ---*/
+
 /*--- Roadmap section ---*/
 
 .roadmap-section {
     position: relative;
-    padding-top: 100px;
+    padding-top: 70px;
     padding-bottom: 50px;
     background: url(/images/signs.png) repeat;
     background-size: auto;
@@ -1106,6 +1128,10 @@ p {
     margin-bottom: 10px;
 }
 
+.roadmap-section .timeline-content .timeline-title p {
+    color: #fff !important;
+}
+
 .roadmap-section .timeline-content .timeline-title.flag {
     position: relative;
     left: 6px;
@@ -1214,6 +1240,15 @@ p {
 }
 
 /*--- Roadmap section ---*/
+
+/*--- Pie section ---*/
+.pie-section {
+    position: relative;
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+/*--- Pie section ---*/
+
 /*--- Utility ---*/
 .ease {
     position: relative;
@@ -1257,6 +1292,10 @@ p {
     -o-transition: all .7s ease;
     -ms-transition: all .7s ease;
     transition: all .7s ease;
+}
+
+w-text-white {
+    color: #fff !important;
 }
 
 .w-text-blue {
