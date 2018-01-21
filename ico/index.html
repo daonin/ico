@@ -41,10 +41,10 @@
         <div class="row">
             <div class="header-left col-12  col-sm-6 col-md-3">
                 <a class="header-logo" href="/">
-                    <img class="main-logo" src="/images/header-logo.svg" alt="Викиум тренажеры для мозга" width="150">
+                    <img class="main-logo" src="/images/header-logo.svg" alt="Викиум тренажеры для мозга">
                 </a>
             </div>
-            <div class="header-nav col-12  col-sm-6 col-md-6">
+            <div class="header-nav col-12  col-sm-6 col-md-7">
                 <label for="toggle" class="hamburger">&#9776;</label>
                 <input type="checkbox" id="toggle" />
                 <div class="menu w-opacity-5">
@@ -55,7 +55,7 @@
                     <a href="#" class="lang menuitem" key="menu_whitepaper">Белая бумага</a>
                 </div>
             </div>
-            <div class="header-right col-12  col-sm-6 col-md-3">
+            <div class="header-right col-12  col-sm-6 col-md-2">
                 <div class="landing-header__lang">
                     <form id="change-lang" action="/user/change_locale" method="get">
                         <div id="lang-select" class="w-custom-select  custom-select--lang  custom-select--closed">
@@ -86,24 +86,7 @@
                         Децентрализованная <span class="w-opacity-5">платформа</span>
                     </h1>
                     <h1><span class="lang text-bold ease4" key="intro-title-2">для тренировки мозга</span></h1>
-                    <h2 calss="lang ease4 w-opacity-5" key="intro-subtitle">Инвестируйте в свое развитие.</h2>
-                    <!--<div class="goals">
-                        <div class="goal-1">
-                            <header> Early-bird</header>
-                            <div class="slider"></div>
-                            <footer class="lang" >Цель - 250 ETH</footer>
-                        </div>
-                        <div class="goal-2">
-                            <header> Pre-ICO</header>
-                            <div class="slider" data-name="current-goal-slider"></div>
-                            <footer> <span>5000</span> ETH</footer>
-                        </div>
-                        <div class="goal-3">
-                            <header> ICO</header>
-                            <div class="slider"></div>
-                            <footer> 20 000 ETH</footer>
-                        </div>
-                    </div>-->
+                    <h2 calss="lang ease4 w-opacity-5" key="intro-subtitle">Инвестируйте в свое развитие.</h2>                    
                     <div class="section-top__raised" data-v-4f0cf69a>
                         <div class="section-top__raised-top" data-v-4f0cf69a>
                             <div class="raised" data-v-4f0cf69a>
@@ -384,7 +367,7 @@
             </div>
         </div>
     </section>
-    <section class="pie-section" id="ico">
+    <section class="container-wide pie-section" id="ico">
         <div class="section-title d-flex justify-content-center">
             <h1>Распределение токенов</h1>
         </div>
@@ -392,28 +375,28 @@
             <p>Собранные в процессе ICO средства пойдут на дальнейшее развитие и маркетинг проекта</p>
         </div>
         <div class="row example-split d-flex justify-content-center">
-            <div class="os-animation" data-os-animation="bounceInLeft" data-os-animation-delay="0.1s" style="width: 40%">
+            <div class="os-animation token-chart" data-os-animation="bounceInLeft" data-os-animation-delay="0.1s">
                 <canvas id="tokenChart"></canvas>
             </div>
         </div>
     </section>
-    <footer class="landing-footer">
-        <div class="landing-footer__inner">
-            <div class="landing-footer__col  landing-footer__col--action">
-                <a class="landing-footer__btn  btn  btn--blue" href="/start">НАЧАТЬ РАЗВИВАТЬСЯ</a>
-                <div class="landing-footer__links">
-                    <a class="landing-footer__link  link  link--underline" href="mailto:pr@wikium.ru?subject=%D0%9E%D0%B1%D1%80%D0%B0%D1%89%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%81%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0%20%D0%92%D0%B8%D0%BA%D0%B8%D1%83%D0%BC&amp;body=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%B0%20%D0%92%D0%B8%D0%BA%D0%B8%D1%83%D0%BC%D0%B0. ">Пресс-служба</a>
-                    <a class="landing-footer__link  link  link--underline" href="mailto:support@wikium.ru?subject=%D0%9E%D0%B1%D1%80%D0%B0%D1%89%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%81%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0%20%D0%92%D0%B8%D0%BA%D0%B8%D1%83%D0%BC&amp;body=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%B0%20%D0%92%D0%B8%D0%BA%D0%B8%D1%83%D0%BC%D0%B0. ">Помощь</a>
-                </div>
-            </div>
-            <div class="landing-footer__col  landing-footer__col--info">
-                <p class="landing-footer__tel">
+    <footer class="container-wide landing-footer ">
+        <div class="row landing-footer__inner justify-content-center">
+            <div class="col-md-4 .center-block">
+                <p class="">
                     Телефон:
-                    <a class="landing-footer__tel-link quon_phone" href="tel:+74951338663">+7 (495) 133-86-63</a><br>
+                    <a class="" href="tel:+74951338663">+7 (495) 133-86-63</a><br>
                     с 10:00 до 19:00
                 </p>
-                <p class="landing-footer__copyright">© Викиум 2013 - 2018</p>
+                <p class="">© Викиум 2013 - 2018</p>
             </div>
+            <div class="col-md-4 .center-block text-center">   
+                <a class="w-btn  w-btn--blue" href="/start">НАЧАТЬ РАЗВИВАТЬСЯ</a>             
+                <div>
+                    <a class="" href="mailto:pr@wikium.ru?subject=%D0%9E%D0%B1%D1%80%D0%B0%D1%89%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%81%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0%20%D0%92%D0%B8%D0%BA%D0%B8%D1%83%D0%BC&amp;body=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%B0%20%D0%92%D0%B8%D0%BA%D0%B8%D1%83%D0%BC%D0%B0. ">Пресс-служба</a>
+                    <a class="" href="mailto:support@wikium.ru?subject=%D0%9E%D0%B1%D1%80%D0%B0%D1%89%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%81%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0%20%D0%92%D0%B8%D0%BA%D0%B8%D1%83%D0%BC&amp;body=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%B0%20%D0%92%D0%B8%D0%BA%D0%B8%D1%83%D0%BC%D0%B0. ">Помощь</a>
+                </div>                
+            </div>            
         </div>
     </footer>
 </body>

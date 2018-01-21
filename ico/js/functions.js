@@ -37,4 +37,29 @@
 
         $(this).addClass("active");
     });
+
+    // media query event handler
+    if (matchMedia) {
+        const mq1050 = window.matchMedia("(min-width: 1050px)");
+        mq1050.addListener(WidthChange1050);
+        WidthChange1050(mq1050);
+    }
+
+    // media query change
+    function WidthChange1050(mq) {
+        $headerRight = $('.header-right');
+        $headerNav = $('.header-nav');        
+        if (mq.matches) {
+            // window width is at least 1050px
+            $headerNav.removeClass('col-md-9');
+            $headerNav.addClass('col-md-7');            
+            $headerRight.addClass('col-md-2');
+        } else {
+            // window width is less than 1050px   
+            $headerRight.removeClass('col-md-2');
+            $headerNav.removeClass('col-md-7');
+            $headerNav.addClass('col-md-9');
+        }
+
+    }
 });

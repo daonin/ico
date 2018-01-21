@@ -30,8 +30,10 @@ $(function () {
         $header = $('.header');
         if (scroll > 50) {
             $header.addClass('header-backround');
+            $header.addClass('header-non-top');
         }
         else {
+            $header.removeClass('header-non-top');
             $header.removeClass('header-backround');
         }
     });
