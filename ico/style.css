@@ -528,7 +528,7 @@ html, body {
     transition: transform .2s ease-in-out, box-shadow .2s ease-in-out;
     transition: transform .2s ease-in-out, box-shadow .2s ease-in-out, -webkit-transform .2s ease-in-out, -webkit-box-shadow .2s ease-in-out;
     cursor: pointer;
-    margin-top: 16px;
+    
 }
 
     .w-btn:focus,
@@ -750,6 +750,8 @@ html, body {
     width: 793px;
     max-width: 100%;
     margin: 0 auto;
+    margin-top: 35px;
+    margin-bottom:35px;
     padding: 24px 40px;
 }
 
@@ -874,6 +876,7 @@ html, body {
     justify-content: space-between;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    margin-top: 45px;
 }
 
 @media (max-width:650px) {
@@ -1003,6 +1006,112 @@ html, body {
         right: 0;
         left: auto;
     }
+
+.token-info{
+    margin-top: -10px;
+}
+
+.token-price {
+    margin-right: 20px;
+}
+
+.collect {
+    color: #fff;
+    margin-top: -15px;
+}
+
+.collect .thermometer {
+    position: relative;
+    width: 100%;
+    height: 15px;
+    padding: 2px;
+    border: 1px solid #2eb6f7;
+    border-radius: 0px;
+    text-align:left;
+}
+
+.collect .thermometer .left-hint {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    font-size: 14px;
+}
+
+.collect .thermometer .right-hint {
+    position: absolute;
+    top: -30px;
+    right: 0;
+    font-size: 14px;
+}
+
+.collect .thermometer .right-bottom-hint {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    font-size: 14px;
+}
+
+.collect .thermometer .soft-cap-hint {
+    position: absolute;
+    top: 20px;
+    font-size: 14px;
+}
+
+.collect .thermometer .soft-cap-hint:before {
+    content: '';
+    position: absolute;
+    bottom: 3px;
+    left: -4px;
+    border-right: 1px solid #2eb6f7;
+    height: 22px;
+    z-index: 1;
+}
+
+.collect .thermometer .soft-cap-hint > div {
+    position: absolute;
+    right: -22px;
+    white-space: nowrap;
+}
+
+@media (max-width: 1304px) and (min-width: 1200px) {
+    .collect .thermometer .soft-cap-hint > div {
+        right: -1px;
+    }
+}
+
+.collect .thermometer .soft-cap-hint > div span {
+    color: #2eb6f7;
+}
+
+.collect .thermometer .soft-cap-top-hint {
+    position: absolute;
+    top: -30px;
+    font-size: 14px;
+}
+
+.collect .thermometer .thermometer-item {
+    position: relative;
+    display: inline-block;
+}
+
+.collect .thermometer .thermometer-item.left {
+    height: 12px;
+    border-right: 0;
+    border-radius: 0px;
+    /*background: linear-gradient(to left top, rgba(68, 193, 187, 0) 53.9%, #44c1fd 51%, #44c1fd 78%, rgba(68, 193, 187, 0) 70%), linear-gradient(to left top, #44c1fd 28%, rgba(189, 107, 127, 0) 30%);*/    
+    /*background-size: 2em 6em;*/
+    background: -webkit-gradient(linear, left top, right top, from(#c965ff), to(#3dc0fa));
+    background: linear-gradient(90deg, #c965ff, #3dc0fa);
+    background-color: #2fbafd;
+    top: -10px;
+    left: -2px
+}
+
+.collect .thermometer .thermometer-item.right {
+    position: relative;
+    height: 20px;
+    border-left: 0;
+}
 
 /*--- Timer ---*/
 .timer__title[data-v-0f270090] {
@@ -1137,6 +1246,47 @@ html, body {
         -webkit-margin-after: 0px;
     }
 
+
+.raised {
+    margin-top: 22px;
+}
+
+.slide {
+    color: #fff
+}
+
+.slide .bottom .up .token-price .label {
+    font-size: 12px;
+}
+
+.slide .bottom .up .token-price .value {
+    display: inline-block;
+    font-size: 32px;
+    line-height: 30px;
+    margin-top: 5px;
+}
+
+.slide .bottom .up .bonus .label {
+    font-size: 12px;
+}
+
+.slide .bottom .up .bonus .value {
+    display: inline-block;
+    font-size: 32px;
+    line-height: 30px;
+    margin-top: 5px;
+}
+
+.slide .bottom .token-price:after {
+    content: '';
+    position: absolute;
+    top: 28px;
+    bottom: 61%;
+    left: 76%;
+    width: 1px;
+    height: 60px;
+    border-left: 1px solid rgba(255, 255, 255, 0.4);
+}
 
 /*--- About section ---*/
 .about-section {
