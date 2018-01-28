@@ -809,7 +809,7 @@ html, body {
 }
 
 @media (max-width:768px) {
-    .section-top__raised-top .timer[data-v-4f0cf69a] {
+    .timer[data-v-4f0cf69a] {
         -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
         order: -1;
@@ -1107,11 +1107,18 @@ html, body {
 }
 
 /*--- Timer ---*/
+.timer{
+    opacity: 0.4;
+    position:absolute;
+
+}
+
 .timer__title[data-v-0f270090] {
     font-size: 16px;
     margin: 0 0 1px;
     color: #fff;
     text-align: center;
+    text-transform: uppercase;
 }
 
 @media (max-width:768px) {
@@ -1151,6 +1158,7 @@ html, body {
     text-align: center;
     color: #fff;
     letter-spacing: normal;
+    text-transform:uppercase;
     margin: 0 10px 0 0;
 }
 
@@ -1160,12 +1168,12 @@ html, body {
     min-width: 50px;
 }
 
-    .timer #days[data-v-0f270090]:before {
+    /*.timer #days[data-v-0f270090]:before {
         content: ":";
         position: absolute;
         top: -4px;
         right: -9px;
-    }
+    }*/
 
 .timer #hours[data-v-0f270090] {
     position: relative;
@@ -1173,12 +1181,12 @@ html, body {
     min-width: 50px;
 }
 
-    .timer #hours[data-v-0f270090]:before {
+    /*.timer #hours[data-v-0f270090]:before {
         content: ":";
         position: absolute;
         top: -4px;
         right: -9px;
-    }
+    }*/
 
 .timer #minutes[data-v-0f270090] {
     position: relative;
@@ -1186,12 +1194,12 @@ html, body {
     min-width: 50px;
 }
 
-    .timer #minutes[data-v-0f270090]:before {
+    /*.timer #minutes[data-v-0f270090]:before {
         content: ":";
         position: absolute;
         top: -4px;
         right: -10px;
-    }
+    }*/
 
 .timer #seconds[data-v-0f270090] {
     min-width: 50px;
