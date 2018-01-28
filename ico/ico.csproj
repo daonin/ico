@@ -130,6 +130,11 @@
     <Content Include="fonts\MuseoSansCyrl-900.eot" />
     <Content Include="fonts\MuseoSansCyrl-900.ttf" />
     <Content Include="fonts\MuseoSansCyrl-900.woff" />
+    <Content Include="css\style.sass" />
+    <None Include="compilerconfig.json" />
+    <None Include="compilerconfig.json.defaults">
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </None>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

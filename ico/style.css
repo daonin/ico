@@ -1007,13 +1007,6 @@ html, body {
         left: auto;
     }
 
-.token-info{
-    margin-top: -10px;
-}
-
-.token-price {
-    margin-right: 20px;
-}
 
 .collect {
     color: #fff;
@@ -1023,9 +1016,10 @@ html, body {
 .collect .thermometer {
     position: relative;
     width: 100%;
-    height: 15px;
-    padding: 2px;
-    border: 1px solid #2eb6f7;
+    height: 10px;
+    /*padding: 2px;*/
+    /*border: 1px solid #2eb6f7;*/
+    background: rgba(107, 152, 252, .2);
     border-radius: 0px;
     text-align:left;
 }
@@ -1060,10 +1054,10 @@ html, body {
 .collect .thermometer .soft-cap-hint:before {
     content: '';
     position: absolute;
-    bottom: 3px;
+    bottom: 4px;
     left: -4px;
     border-right: 1px solid #2eb6f7;
-    height: 22px;
+    height: 20px;
     z-index: 1;
 }
 
@@ -1095,7 +1089,7 @@ html, body {
 }
 
 .collect .thermometer .thermometer-item.left {
-    height: 12px;
+    height: 10px;
     border-right: 0;
     border-radius: 0px;
     /*background: linear-gradient(to left top, rgba(68, 193, 187, 0) 53.9%, #44c1fd 51%, #44c1fd 78%, rgba(68, 193, 187, 0) 70%), linear-gradient(to left top, #44c1fd 28%, rgba(189, 107, 127, 0) 30%);*/    
@@ -1104,7 +1098,6 @@ html, body {
     background: linear-gradient(90deg, #c965ff, #3dc0fa);
     background-color: #2fbafd;
     top: -10px;
-    left: -2px
 }
 
 .collect .thermometer .thermometer-item.right {
@@ -1255,6 +1248,14 @@ html, body {
     color: #fff
 }
 
+.token-info{
+    margin-top: -10px;
+}
+
+.slide .bottom .up .token-price {
+    width: 120px;
+}
+
 .slide .bottom .up .token-price .label {
     font-size: 12px;
 }
@@ -1266,6 +1267,32 @@ html, body {
     margin-top: 5px;
 }
 
+.slide .bottom .token-price:after {
+    content: '';
+    position: absolute;
+    top: 28px;
+    bottom: 61%;
+    left: 71%;
+    width: 1px;
+    height: 60px;
+    border-left: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.slide .bottom .up .bonus {
+    width: 120px;
+}
+
+.slide .bottom .up .bonus::after {
+    content: '';
+    position: absolute;
+    top: 88px;
+    bottom: 61%;
+    left: 54%;
+    width: 255px;
+    height: 1px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+} 
+
 .slide .bottom .up .bonus .label {
     font-size: 12px;
 }
@@ -1275,17 +1302,6 @@ html, body {
     font-size: 32px;
     line-height: 30px;
     margin-top: 5px;
-}
-
-.slide .bottom .token-price:after {
-    content: '';
-    position: absolute;
-    top: 28px;
-    bottom: 61%;
-    left: 76%;
-    width: 1px;
-    height: 60px;
-    border-left: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 /*--- About section ---*/
