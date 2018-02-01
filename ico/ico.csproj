@@ -99,9 +99,13 @@
     <Content Include="css\bootstrap-reboot.min.css" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\style_be.css" />
+    <Content Include="images\abstract.png" />
     <Content Include="images\brain_200.png" />
     <Content Include="images\brain_500.png" />
     <Content Include="images\brain_800.png" />
+    <Content Include="images\road-2.png" />
+    <Content Include="images\road-3.png" />
+    <Content Include="images\road-5.png" />
     <Content Include="images\road.png" />
     <Content Include="images\bgrnd.png" />
     <Content Include="images\header-logo--international.svg" />

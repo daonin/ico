@@ -1339,10 +1339,11 @@ html, body {
     position: relative;
     padding-top: 70px;
     padding-bottom: 50px;
-    background: url(/images/signs.png) repeat;
-    background-size: auto;
+    background: url(/images/road-5.png) no-repeat;
+    background-size: cover;
     background-color: #f2f2f2;
     background-position-y: bottom;
+    /*padding-bottom: 15%;*/
     /*z-index: 101;*/
 }
 
