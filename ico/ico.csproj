@@ -103,9 +103,8 @@
     <Content Include="images\brain_200.png" />
     <Content Include="images\brain_500.png" />
     <Content Include="images\brain_800.png" />
+    <Content Include="images\gradient_s.png" />
     <Content Include="images\road-2.png" />
-    <Content Include="images\road-3.png" />
-    <Content Include="images\road-5.png" />
     <Content Include="images\road.png" />
     <Content Include="images\bgrnd.png" />
     <Content Include="images\header-logo--international.svg" />
@@ -114,15 +113,36 @@
     <Content Include="images\login-black.png" />
     <Content Include="images\login-grey.png" />
     <Content Include="images\login-white.png" />
+    <Content Include="images\road_b.png" />
+    <Content Include="images\road_m.png" />
     <Content Include="images\signs.png" />
+    <Content Include="images\team\belan_300.jpg" />
+    <Content Include="images\team\belan_300_bw.jpg" />
+    <Content Include="images\team\chuklyaev_300.jpg" />
+    <Content Include="images\team\chuklyaev_300_bw.jpg" />
+    <Content Include="images\team\francuzov_300.jpg" />
+    <Content Include="images\team\francuzov_300_bw.jpg" />
+    <Content Include="images\team\kolzikov_300.jpg" />
+    <Content Include="images\team\kolzikov_300_bw.jpg" />
+    <Content Include="images\team\kustova_300.jpg" />
+    <Content Include="images\team\kustova_300_bw.jpg" />
+    <Content Include="images\team\lagutinskiy_300.jpg" />
+    <Content Include="images\team\lagutinskiy_300_bw.jpg" />
+    <Content Include="images\team\lalenkov_300.jpg" />
+    <Content Include="images\team\lalenkov_300_bw.jpg" />
+    <Content Include="images\team\perzeva_300.jpg" />
+    <Content Include="images\team\perzeva_300_bw.jpg" />
+    <Content Include="investor.html" />
     <Content Include="js\app.js" />
     <Content Include="js\bootstrap.bundle.min.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\Chart.min.js" />
     <Content Include="js\chart_gen.js" />
+    <Content Include="js\config.js" />
     <Content Include="js\countdown.js" />
     <Content Include="js\functions.js" />
     <Content Include="js\particles.js" />
+    <Content Include="js\set_data.js" />
     <Content Include="js\translation.js" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
@@ -139,6 +159,7 @@
     <None Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>
     </None>
+    <Content Include="data.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

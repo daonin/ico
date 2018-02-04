@@ -35,14 +35,15 @@
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
     <script src="js/Chart.min.js" type="text/javascript"></script>
     <script src="js/chart_gen.js" type="text/javascript"></script>
+    <script src="js/config.js" type="text/javascript"></script>
 </head>
 <body>
     <div class="header container-fluid">
-        <div class="row">
+        <div class="row" id="header-row">
             <div class="header-left col-12  col-sm-6 col-md-3">
                 <a class="header-logo" href="/">
                     <img class="main-logo" src="/images/header-logo.svg" alt="Викиум тренажеры для мозга">
-                </a>
+                </a>                
             </div>
             <div class="header-nav col-12  col-sm-6 col-md-7">
                 <label for="toggle" class="hamburger">&#9776;</label>
@@ -63,10 +64,13 @@
                                 Русский
                             </span>
                             <div class="custom-select__items">
-                                <input class="custom-select__item" type="radio" name="locale" value="ru" id="ru" checked>
+                                <a href="/">Русский</a>
+                                <a href="/en">English</a>
+                                <a href="/zn">简体中文</a>
+                                <!--<input class="custom-select__item" type="radio" name="locale" value="ru" id="ru" checked>
                                 <label class="custom-select__item-label" for="ru">Русский</label>
                                 <input class="custom-select__item" type="radio" name="locale" value="en" id="en">
-                                <label class="custom-select__item-label" for="en">English</label>
+                                <label class="custom-select__item-label" for="en">English</label>-->
                             </div>
                         </div>
                     </form>
@@ -87,21 +91,21 @@
                     </h1>
                     <h1><span class="lang text-bold ease4" key="intro-title-2">для тренировки мозга</span></h1>
                     <!--<h2 calss="lang ease4 w-opacity-5" key="intro-subtitle">Инвестируйте в свое развитие.</h2>-->
-                    <div class="section-top__raised" data-v-4f0cf69a>
-                        <div class="section-top__raised-top" data-v-4f0cf69a>
-                            <div class="raised" data-v-4f0cf69a>
+                    <div class="container section-top__raised" data-v-4f0cf69a>
+                        <div class="row section-top__raised-top" data-v-4f0cf69a>
+                            <div class="raised col-md-4" data-v-4f0cf69a>
                                 <div class="raised__title" data-v-4f0cf69a>Итого собрано</div>
-                                <div class="raised__text" data-v-4f0cf69a>253 545,5$</div>
+                                <div class="raised__text" style="white-space: nowrap" data-v-4f0cf69a>253 545,5$</div>
                             </div>
-                            <div class="token-info">
-                                <div class="slide d-flex align-items-stretch flex-column p-2">
-                                    <div class="bottom d-flex align-items-stretch justify-content-between flex-column">
-                                        <div class="up d-flex align-items-start flex-row">
-                                            <div class="token-price">
+                            <div class="token-info col-md-4">
+                                <div class="slide justify-content-center">
+                                    <div class="bottom ">
+                                        <div class="up row justify-content-center">
+                                            <div class="token-price col-md-6">
                                                 <span class="label"><!-- react-text: 701 -->Цена токена<!-- /react-text --><!-- react-text: 702 -->:<!-- /react-text --></span>
-                                                <br><span class="value"><!-- react-text: 705 -->$<!-- /react-text --><!-- react-text: 706 -->0.009<!-- /react-text --></span>
+                                                <br><span class="value"><!-- react-text: 705 -->$<!-- /react-text --><!-- react-text: 706 -->0.5<!-- /react-text --></span>
                                             </div>
-                                            <div class="bonus">
+                                            <div class="bonus col-md-6">
                                                 <span class="label"><!-- react-text: 709 -->Бонус<!-- /react-text --><!-- react-text: 710 -->:<!-- /react-text --></span>
                                                 <br><span class="value"><!-- react-text: 713 -->4<!-- /react-text --><!-- react-text: 714 -->%<!-- /react-text --></span>
                                             </div>
@@ -111,7 +115,7 @@
                                 <div class="collect">
                                     <div class="thermometer mt-5">
                                         <div class="right-hint">
-                                            <!-- react-text: 692 -->$22
+                                            <!-- react-text: 692 -->$30
                                             <!-- /react-text -->
                                             <!-- react-text: 693 -->
                                             <!-- /react-text -->
@@ -119,15 +123,15 @@
                                             <!-- /react-text -->
                                         </div>
                                         <div class="right-bottom-hint">Макс. сумма</div>
-                                        <div class="soft-cap-top-hint" style="left: 22.4545%;">
-                                            <!-- react-text: 697 -->$2
+                                        <div class="soft-cap-top-hint" style="left: 23.3%;">
+                                            <!-- react-text: 697 -->$7
                                             <!-- /react-text -->
                                             <!-- react-text: 698 -->М
                                             <!-- /react-text -->
                                         </div>
                                         <div class="soft-cap-hint" style="left: 25%;">
                                             <div>
-                                                <span>✓</span>
+                                                <span class="soft-cap-check hidden">✓</span>
                                                 <!-- react-text: 702 -->
                                                 <!-- /react-text -->
                                                 <!-- react-text: 703 -->Мин. сумма
@@ -135,7 +139,7 @@
                                             </div>
                                         </div>
                                         <div class="thermometer-item left" style="width: 2%;"></div>
-                                        <div class="thermometer-item right" style="width: 15.5499%;"></div>
+                                        <!--<div class="thermometer-item right" style="width: 15.5499%;"></div>-->
                                     </div>
                                 </div>
                             </div>
@@ -154,11 +158,11 @@
                         <!--<div style="height: 15px;"></div>-->
                         <div class="section-top__stages-lineMob" data-v-4f0cf69a>
                             <div class="section-top__stages-line" data-v-4f0cf69a>
-                                <div class="line-stages" data-v-4f0cf69a><span data-v-4f0cf69a></span></div>
-                                <div class="line__block line__block-stage-1" data-v-4f0cf69a>01.02.2018<span data-v-4f0cf69a>Early-bird</span></div>
-                                <div class="line__block line__block-stage-2" data-v-4f0cf69a>01.03.2018<span data-v-4f0cf69a>Pre-ICO</span></div>
-                                <div class="line__block line__block-stage-3" data-v-4f0cf69a>01.04.2018<span data-v-4f0cf69a>ICO</span></div>
-                                <div class="line__block line__block-stage-4" data-v-4f0cf69a>01.06.2018<span data-v-4f0cf69a>Finish</span></div>
+                                <div class="line-stages" data-v-4f0cf69a><span id="stages-progress" data-v-4f0cf69a></span></div>
+                                <div class="line__block line__block-stage-1" data-v-4f0cf69a>01.03.2018<span data-v-4f0cf69a>Early-bird</span></div>
+                                <div class="line__block line__block-stage-2" data-v-4f0cf69a>20.03.2018<span data-v-4f0cf69a>Pre-ICO</span></div>
+                                <div class="line__block line__block-stage-3" data-v-4f0cf69a>04.04.2018<span data-v-4f0cf69a>ICO</span></div>
+                                <div class="line__block line__block-stage-4" data-v-4f0cf69a>20.05.2018<span data-v-4f0cf69a>Finish</span></div>
                             </div>
                         </div>
                     </div>
@@ -184,11 +188,11 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>  
+                                </div>
                             </div>
                         </div>
                     </div>
-                    
+
                 </section>
                 <!--<section class="os-animation" data-os-animation="bounceInUp" data-os-animation-delay="0.1s">
                     <div class="container">
@@ -420,18 +424,169 @@
             </div>
         </div>
     </section>
+    <section class="team-section">
+        <div class="angle-section">
+            <div class="container">
+                <div class="team-title text-center open-sans-bold">
+                    <h1>Наша команда</h1>
+                </div>
+                <div class="row team-section--members">
+                    <div class="col-12 col-md-6 col-lg-4 team-section--members--item mb-5">
+                        <div class="team-section--members--item--photo">
+                            <img src="/images/team/belan_300_bw.jpg" alt="Sergey Belan">
+                            <a href="https://www.linkedin.com/in/sergey-belan-aa868584/" target="_blank" class="first-of-two">
+                                <img src="https://crowdsale.storiqa.com/static/media/member-linkedin.800e16a6.svg" alt="Linkedin">
+                            </a>
+                            <a href="https://www.facebook.com/sergey.belan.940?pnref=friends.search" target="_blank" class="first-of-two">
+                                <img src="https://crowdsale.storiqa.com/static/media/member-facebook.74d026a8.svg" alt="Facebook">
+                            </a>
+                        </div>
+                        <div class="team-section--members--item--name">Сергей Белан</div>
+                        <div class="team-section--members--item--position">Основатель, Генеральный директор ГК «Викиум»</div>
+                        <div class="team-section--members--item--description text-left">
+                            Руководит всеми операциями и принимает стратегические решения для развития компании. Внес значительный вклад в становление и популяризацию нейротехнологий, входил в первый состав рабочей группы «Нейронет» по формированию дорожной карты Национальной технологической инициативы (НТИ).
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 team-section--members--item mb-5">
+                        <div class="team-section--members--item--photo">
+                            <img src="/images/team/kolzikov_300_bw.jpg" alt="Pavel Kolzhikov">
+                            <a href="https://www.linkedin.com/in/%D0%BF%D0%B0%D0%B2%D0%B5%D0%BB-%D0%BA%D0%BE%D0%BB%D0%B6%D0%B8%D0%BA%D0%BE%D0%B2-058a6155/" target="_blank" class="first-of-two">
+                                <img src="https://crowdsale.storiqa.com/static/media/member-linkedin.800e16a6.svg" alt="Linkedin">
+                            </a>
+                            <a href="https://www.facebook.com/kolzhikov" target="_blank" class="first-of-two">
+                                <img src="https://crowdsale.storiqa.com/static/media/member-facebook.74d026a8.svg" alt="Facebook">
+                            </a>
+                        </div>
+                        <div class="team-section--members--item--name">Павел Колжиков</div>
+                        <div class="team-section--members--item--position">технический директор</div>
+                        <div class="team-section--members--item--description text-left">
+                            Выстраивает процессы разработки и интеграции программного продукта. Сформировал команду IT блока и разработал систему мотивации сотрудников. Участвовал в проектировании ключевых модулей депозитарной системы. Занимал ведущую роль в организации процесса внедрения различных практик DevOps среди всех проектов организации.
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 team-section--members--item mb-5">
+                        <div class="team-section--members--item--photo">
+                            <img src="/images/team/lagutinskiy_300_bw.jpg" alt="Denis Lagutinskiy">
+                            <a href="https://www.facebook.com/denis.lagutinskiy?pnref=friends.search" target="_blank" class="first-of-two">
+                                <img src="https://crowdsale.storiqa.com/static/media/member-facebook.74d026a8.svg" alt="Facebook">
+                            </a>
+                        </div>
+                        <div class="team-section--members--item--name">Денис Лагутинский</div>
+                        <div class="team-section--members--item--position">директор по развитию бизнеса</div>
+                        <div class="team-section--members--item--description text-left">
+                            Управляет прямыми продажами и развитием отношений с партнерами, курирует процесс создания и вывода на рынок новых продуктов для В2В клиентов, отвечает за качественную и эффективную коммуникацию с партнерами и В2В клиентами.
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 team-section--members--item mb-5">
+                        <div class="team-section--members--item--photo">
+                            <img src="/images/team/kustova_300_bw.jpg" alt="Anna Kustova">
+                            <a href="https://www.facebook.com/aakustova?pnref=lhc.unseen" target="_blank" class="first-of-two">
+                                <img src="https://crowdsale.storiqa.com/static/media/member-facebook.74d026a8.svg" alt="Facebook">
+                            </a>
+                        </div>
+                        <div class="team-section--members--item--name">Анна Кустова</div>
+                        <div class="team-section--members--item--position">операционный директор</div>
+                        <div class="team-section--members--item--description text-left">
+                            Осуществляет операционное управление компанией. Определяет стратегию развития продукта и маркетинга. Курирует внешние проекты. Является победителем конкурса Правительства г. Москвы «Менеджер года – 2008» в номинации «Менеджер структурного подразделения» и победителем конкурса Консульства и Торговой Палаты Швеции (делегация от РФ – 4 человека), обладатель гранта на развитие бизнес-отношений с энергетическими компаниями Швеции.
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 team-section--members--item mb-5">
+                        <div class="team-section--members--item--photo">
+                            <img src="/images/team/lalenkov_300_bw.jpg" alt="Sergey Lyalenkov">
+                            <a href="https://www.facebook.com/lyalenkov?pnref=friends.search" target="_blank" class="first-of-two">
+                                <img src="https://crowdsale.storiqa.com/static/media/member-facebook.74d026a8.svg" alt="Facebook">
+                            </a>
+                        </div>
+                        <div class="team-section--members--item--name">Сергей Ляленков</div>
+                        <div class="team-section--members--item--position">директор по маркетингу</div>
+                        <div class="team-section--members--item--description text-left">
+                            Более 10 лет в онлайн-маркетинге. Реализовал крупную english learning партнёрскую программу в РФ с LinguaLeo. Вывел мобильное приложение в общий топ и топ по категории. За время работы в Викиум увеличил ежемесячную выручку и количество регистраций в 10 раз, вывел продукт на международные рынки.
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 team-section--members--item mb-5">
+                        <div class="team-section--members--item--photo">
+                            <img src="/images/team/perzeva_300_bw.jpg" alt="Olga Perzeva">
+                            <a href="https://www.linkedin.com/in/olga-soskunova-341091a0/" target="_blank" class="first-of-two">
+                                <img src="https://crowdsale.storiqa.com/static/media/member-linkedin.800e16a6.svg" alt="Linkedin">
+                            </a>
+                            <a href="https://www.facebook.com/olga.soskunova" target="_blank" class="first-of-two">
+                                <img src="https://crowdsale.storiqa.com/static/media/member-facebook.74d026a8.svg" alt="Facebook">
+                            </a>
+                        </div>
+                        <div class="team-section--members--item--name">Ольга Перцева</div>
+                        <div class="team-section--members--item--position">PR-директор</div>
+                        <div class="team-section--members--item--description text-left">
+                            Осуществляет продвижение компании, повышение узнаваемости бренда, лояльности существующих клиентов (отстраненность от конкурентов).
+                            Работает над стратегией популяризации и продвижения нейронаправления компании. Прошла акселерационную программу во ФРИИ.
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 team-section--members--item mb-5">
+                        <div class="team-section--members--item--photo">
+                            <img src="/images/team/chuklyaev_300_bw.jpg" alt="Evgeny Chuklyaev">
+                            <a href="https://www.facebook.com/chupeckij?pnref=friends.search" target="_blank" class="first-of-two">
+                                <img src="https://crowdsale.storiqa.com/static/media/member-facebook.74d026a8.svg" alt="Facebook">
+                            </a>
+                        </div>
+                        <div class="team-section--members--item--name">Евгений Чукляев</div>
+                        <div class="team-section--members--item--position">менеджер по продукту</div>
+                        <div class="team-section--members--item--description text-left">
+                            Занимается проектированием функциональности продукта, анализом текущей функциональности системы на предмет развития и повышения удобства. Разрабатывает новые продукты компании.
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 team-section--members--item mb-5">
+                        <div class="team-section--members--item--photo">
+                            <img src="/images/team/francuzov_300_bw.jpg" alt="Nikolay Francuzov">
+                            <a href="https://www.facebook.com/nicky.franzusof?pnref=friends.search" target="_blank" class="first-of-two">
+                                <img src="https://crowdsale.storiqa.com/static/media/member-facebook.74d026a8.svg" alt="Facebook">
+                            </a>
+                        </div>
+                        <div class="team-section--members--item--name">Николай Французов</div>
+                        <div class="team-section--members--item--position">нейропсихолог, методолог</div>
+                        <div class="team-section--members--item--description text-left">
+                            Разработал и апробировал проектную форму работы по профориентации у подростков и программу профилактики и реабилитации зависимого поведения «Renovatio». В настоящее время создает научные методологии для новых когнитивных онлайн-тренажеров, курирует проведение научного исследования в отношении влияния когнитивных тренажеров на
+                            улучшение работы познавательных функций мозга. Консультирует группу разработчиков и дизайнеров относительно реализации тренажеров.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="container-fluid pie-section" id="ico">
         <div class="section-title d-flex justify-content-center">
             <h1>Распределение токенов</h1>
         </div>
         <div class="section-title d-flex justify-content-center">
-            <p>Собранные в процессе ICO средства пойдут на дальнейшее развитие и маркетинг проекта</p>
+            <p class="mb-5">Собранные в процессе ICO средства пойдут на дальнейшее развитие и маркетинг проекта</p>
         </div>
         <div class="row example-split d-flex justify-content-center">
             <div class="os-animation token-chart" data-os-animation="bounceInLeft" data-os-animation-delay="0.1s">
                 <canvas id="tokenChart"></canvas>
             </div>
         </div>
+    </section>
+    <section class="smart-section">
+            <div class="container">
+                <div class="section-title d-flex justify-content-center">
+                    <h1>Смарт-контракт Github</h1>
+                </div>
+                <div class="section-title d-flex justify-content-center">
+                    <p class="description text-center mb-5">
+                        Мы публикуем наш исходные текст на Guthub, потому что хотим быть честными и открытыми.
+                    </p>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-12 text-center">
+                        <!-- react-empty: 780 -->
+                        <!-- react-empty: 781 -->
+                        <img src="https://crowdsale.storiqa.com/static/media/github_992.9cb96083.png" alt="Demand" class="">
+                    </div>
+                    <div class="col-12 mt-5 text-center">
+                        <div>
+                            <a class="w-btn w-btn--blue" href="https://github.com/Storiqa/ico_smart_contract" target="_blank" class="button-empty text-white text-center open-sans-semibold">КОД НА Github</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </section>
     <footer class="container-fluid landing-footer ">
         <div class="row landing-footer__inner justify-content-center">
@@ -452,5 +607,6 @@
             </div>
         </div>
     </footer>
+    <script src="js/set_data.js" type="text/javascript"></script>
 </body>
 </html>

@@ -52,7 +52,7 @@
         options: {
             responsive: true,
             legend: {
-                position: 'right'
+                position: 'bottom'
             }
         }
     });

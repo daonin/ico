@@ -149,9 +149,9 @@ html, body {
 }
 
 @media screen and (max-width: 1050px) {
-    .w-custom-select {
-        display: none
-    }
+    /*.w-custom-select {
+        display: none;
+    }*/
 }
 
 .w-custom-select:focus,
@@ -206,6 +206,17 @@ html, body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, .5);
     cursor: pointer;
 }
+
+    .custom-select__items a {
+        display: block;
+        width: 100%;
+        height: 40px;
+        padding: 9px 16px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 23px;
+        cursor: pointer;
+    }
 
 .w-custom-select:after {
     content: "";
@@ -307,8 +318,18 @@ html, body {
     text-align: right;
 }
 
-.header-right {
+@media screen and (max-width:1050px) {
+    .header-nav {
+        position: absolute;
+        right: 10px;
+    }
+
+    .header-right {
+        margin-left: 15px;
+    }
 }
+
+
 
 .menu {
     line-height: 50px;
@@ -518,9 +539,9 @@ html, body {
     line-height: 1.4;
     text-align: center;
     text-transform: uppercase;
-    text-decoration: none;
+    text-decoration: none !important;
     letter-spacing: .5px;
-    color: #fff;
+    color: #fff !important;
     border-radius: 50px;
     -webkit-transition: -webkit-transform .2s ease-in-out, -webkit-box-shadow .2s ease-in-out;
     transition: -webkit-transform .2s ease-in-out, -webkit-box-shadow .2s ease-in-out;
@@ -528,7 +549,6 @@ html, body {
     transition: transform .2s ease-in-out, box-shadow .2s ease-in-out;
     transition: transform .2s ease-in-out, box-shadow .2s ease-in-out, -webkit-transform .2s ease-in-out, -webkit-box-shadow .2s ease-in-out;
     cursor: pointer;
-    
 }
 
     .w-btn:focus,
@@ -617,7 +637,7 @@ html, body {
     }
 }
 
-.container {
+/*.container {
     color: hsla(0, 0%, 100%, .5);
     text-align: center;
     margin-top: 5%;
@@ -690,7 +710,7 @@ html, body {
         .container li span {
             font-size: 1.8rem;
         }
-}
+}*/
 
 
 .goals {
@@ -751,13 +771,14 @@ html, body {
     max-width: 100%;
     margin: 0 auto;
     margin-top: 35px;
-    margin-bottom:35px;
+    margin-bottom: 35px;
     padding: 24px 40px;
 }
 
-@media (max-width:768px) {
+@media (max-width:800px) {
     .section-top__raised[data-v-4f0cf69a] {
         padding: 24px 20px;
+        width: 90%;
     }
 }
 
@@ -771,7 +792,7 @@ html, body {
     background-color: hsla(0, 0%, 100%, .04);
 }
 
-@media (max-width:768px) {
+@media (max-width:800px) {
     .section-top__raised[data-v-4f0cf69a]:before {
         display: none;
     }
@@ -824,9 +845,9 @@ html, body {
     }
 }
 
-@media (max-width:650px) {
+@media (max-width:800px) {
     .section-top__stages-lineMob[data-v-4f0cf69a] {
-        overflow-x: scroll;
+        display: none;
     }
 }
 
@@ -1010,62 +1031,61 @@ html, body {
 
 .collect {
     color: #fff;
-    margin-top: -15px;
 }
 
-.collect .thermometer {
-    position: relative;
-    width: 100%;
-    height: 10px;
-    /*padding: 2px;*/
-    /*border: 1px solid #2eb6f7;*/
-    background: rgba(107, 152, 252, .2);
-    border-radius: 0px;
-    text-align:left;
-}
+    .collect .thermometer {
+        position: relative;
+        width: 100%;
+        height: 10px;
+        /*padding: 2px;*/
+        /*border: 1px solid #2eb6f7;*/
+        background: rgba(107, 152, 252, .2);
+        border-radius: 0px;
+        text-align: left;
+    }
 
-.collect .thermometer .left-hint {
-    position: absolute;
-    top: -30px;
-    left: 0;
-    font-size: 14px;
-}
+        .collect .thermometer .left-hint {
+            position: absolute;
+            top: -30px;
+            left: 0;
+            font-size: 14px;
+        }
 
-.collect .thermometer .right-hint {
-    position: absolute;
-    top: -30px;
-    right: 0;
-    font-size: 14px;
-}
+        .collect .thermometer .right-hint {
+            position: absolute;
+            top: -30px;
+            right: 0;
+            font-size: 14px;
+        }
 
-.collect .thermometer .right-bottom-hint {
-    position: absolute;
-    top: 20px;
-    right: 0;
-    font-size: 14px;
-}
+        .collect .thermometer .right-bottom-hint {
+            position: absolute;
+            top: 20px;
+            right: 0;
+            font-size: 14px;
+        }
 
-.collect .thermometer .soft-cap-hint {
-    position: absolute;
-    top: 20px;
-    font-size: 14px;
-}
+        .collect .thermometer .soft-cap-hint {
+            position: absolute;
+            top: 20px;
+            font-size: 14px;
+        }
 
-.collect .thermometer .soft-cap-hint:before {
-    content: '';
-    position: absolute;
-    bottom: 4px;
-    left: -4px;
-    border-right: 1px solid #2eb6f7;
-    height: 20px;
-    z-index: 1;
-}
+            .collect .thermometer .soft-cap-hint:before {
+                content: '';
+                position: absolute;
+                bottom: 4px;
+                left: -4px;
+                border-right: 1px solid #2eb6f7;
+                height: 20px;
+                z-index: 1;
+            }
 
-.collect .thermometer .soft-cap-hint > div {
-    position: absolute;
-    right: -22px;
-    white-space: nowrap;
-}
+            .collect .thermometer .soft-cap-hint > div {
+                position: absolute;
+                right: -22px;
+                white-space: nowrap;
+            }
 
 @media (max-width: 1304px) and (min-width: 1200px) {
     .collect .thermometer .soft-cap-hint > div {
@@ -1088,29 +1108,28 @@ html, body {
     display: inline-block;
 }
 
-.collect .thermometer .thermometer-item.left {
-    height: 10px;
-    border-right: 0;
-    border-radius: 0px;
-    /*background: linear-gradient(to left top, rgba(68, 193, 187, 0) 53.9%, #44c1fd 51%, #44c1fd 78%, rgba(68, 193, 187, 0) 70%), linear-gradient(to left top, #44c1fd 28%, rgba(189, 107, 127, 0) 30%);*/    
-    /*background-size: 2em 6em;*/
-    background: -webkit-gradient(linear, left top, right top, from(#c965ff), to(#3dc0fa));
-    background: linear-gradient(90deg, #c965ff, #3dc0fa);
-    background-color: #2fbafd;
-    top: -10px;
-}
+    .collect .thermometer .thermometer-item.left {
+        height: 10px;
+        border-right: 0;
+        border-radius: 0px;
+        /*background: linear-gradient(to left top, rgba(68, 193, 187, 0) 53.9%, #44c1fd 51%, #44c1fd 78%, rgba(68, 193, 187, 0) 70%), linear-gradient(to left top, #44c1fd 28%, rgba(189, 107, 127, 0) 30%);*/
+        /*background-size: 2em 6em;*/
+        background: -webkit-gradient(linear, left top, right top, from(#c965ff), to(#3dc0fa));
+        background: linear-gradient(90deg, #c965ff, #3dc0fa);
+        background-color: #2fbafd;
+        top: -8px;
+    }
 
-.collect .thermometer .thermometer-item.right {
-    position: relative;
-    height: 20px;
-    border-left: 0;
-}
+    .collect .thermometer .thermometer-item.right {
+        position: relative;
+        height: 20px;
+        border-left: 0;
+    }
 
 /*--- Timer ---*/
-.timer{
+.timer {
     opacity: 0.4;
-    position:absolute;
-
+    position: absolute;
 }
 
 .timer__title[data-v-0f270090] {
@@ -1158,7 +1177,7 @@ html, body {
     text-align: center;
     color: #fff;
     letter-spacing: normal;
-    text-transform:uppercase;
+    text-transform: uppercase;
     margin: 0 10px 0 0;
 }
 
@@ -1168,7 +1187,7 @@ html, body {
     min-width: 50px;
 }
 
-    /*.timer #days[data-v-0f270090]:before {
+/*.timer #days[data-v-0f270090]:before {
         content: ":";
         position: absolute;
         top: -4px;
@@ -1181,7 +1200,7 @@ html, body {
     min-width: 50px;
 }
 
-    /*.timer #hours[data-v-0f270090]:before {
+/*.timer #hours[data-v-0f270090]:before {
         content: ":";
         position: absolute;
         top: -4px;
@@ -1194,7 +1213,7 @@ html, body {
     min-width: 50px;
 }
 
-    /*.timer #minutes[data-v-0f270090]:before {
+/*.timer #minutes[data-v-0f270090]:before {
         content: ":";
         position: absolute;
         top: -4px;
@@ -1253,53 +1272,71 @@ html, body {
 }
 
 .slide {
-    color: #fff
+    color: #fff;
 }
 
-.token-info{
+.token-info {
     margin-top: -10px;
+}
+
+@media screen and (max-width: 801px) {
+    .token-info {
+        margin-top: 10px;
+    }
 }
 
 .slide .bottom .up .token-price {
     width: 120px;
 }
 
-.slide .bottom .up .token-price .label {
-    font-size: 12px;
-}
+    .slide .bottom .up .token-price .label {
+        font-size: 12px;
+    }
 
-.slide .bottom .up .token-price .value {
-    display: inline-block;
-    font-size: 32px;
-    line-height: 30px;
-    margin-top: 5px;
-}
+    .slide .bottom .up .token-price .value {
+        display: inline-block;
+        font-size: 32px;
+        line-height: 30px;
+        margin-top: 5px;
+    }
 
 .slide .bottom .token-price:after {
     content: '';
     position: absolute;
-    top: 28px;
+    top: 7px;
     bottom: 61%;
-    left: 71%;
+    left: 105%;
     width: 1px;
     height: 60px;
     border-left: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+@media screen and (max-width: 801px) {
+    .slide .bottom .token-price:after {
+        display: none;
+    }
 }
 
 .slide .bottom .up .bonus {
     width: 120px;
 }
 
-.slide .bottom .up .bonus::after {
-    content: '';
-    position: absolute;
-    top: 88px;
-    bottom: 61%;
-    left: 54%;
-    width: 255px;
-    height: 1px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-} 
+    .slide .bottom .up .bonus::after {
+        content: '';
+        position: absolute;
+        top: 67px;
+        bottom: 61%;
+        left: -86%;
+        width: 202px;
+        height: 1px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    }
+
+@media screen and (max-width: 801px) {
+    .slide .bottom .up .bonus::after {
+        display: none;
+    }
+}
 
 .slide .bottom .up .bonus .label {
     font-size: 12px;
@@ -1339,7 +1376,7 @@ html, body {
     position: relative;
     padding-top: 70px;
     padding-bottom: 50px;
-    background: url(/images/road-5.png) no-repeat;
+    background: url(/images/road_b.png) no-repeat;
     background-size: cover;
     background-color: #f2f2f2;
     background-position-y: bottom;
@@ -1347,159 +1384,143 @@ html, body {
     /*z-index: 101;*/
 }
 
-    /*@media (max-width: 1024px) {
+
+@media (max-width: 1500px) {
     .roadmap-section {
-        background-image: url(https://crowdsale.storiqa.com/static/media/moun3_1024.b9022346.png);
+        background-image: url(/images/gradient_s.png);
+        color: #fff;
     }
 }
 
-@media (max-width: 992px) {
-    .roadmap-section {
-        background-image: url(https://crowdsale.storiqa.com/static/media/moun3_992.c0f50295.png);
-    }
+.roadmap-section h1,
+.roadmap-section h2,
+.roadmap-section h3,
+.roadmap-section h4,
+.roadmap-section h5,
+.roadmap-section h6 {
+    color: #3D4351;
+    margin-top: 0;
 }
 
-@media (max-width: 768px) {
-    .roadmap-section {
-        background-image: url(https://crowdsale.storiqa.com/static/media/moun3_768.fd49bdbb.png);
-    }
+.roadmap-section a {
+    color: #2eb6f7;
 }
 
-@media (max-width: 576px) {
-    .roadmap-section {
-        background-image: url(https://crowdsale.storiqa.com/static/media/moun3_576.94685c25.png);
-    }
-}*/
-
-    .roadmap-section h1,
-    .roadmap-section h2,
-    .roadmap-section h3,
-    .roadmap-section h4,
-    .roadmap-section h5,
-    .roadmap-section h6 {
-        color: #3D4351;
-        margin-top: 0;
+    .roadmap-section a:hover {
+        color: #fd8585;
+        text-decoration: none;
     }
 
-    .roadmap-section a {
-        color: #2eb6f7;
-    }
+.roadmap-section .split-wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+}
 
-        .roadmap-section a:hover {
-            color: #fd8585;
-            text-decoration: none;
-        }
+.roadmap-section .example-header {
+    background: #3D4351;
+    color: #FFF;
+    font-weight: 300;
+    padding: 3em 1em;
+    text-align: center;
+}
 
-    .roadmap-section .split-wrapper {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
-    .roadmap-section .example-header {
-        background: #3D4351;
+    .roadmap-section .example-header h1 {
         color: #FFF;
         font-weight: 300;
-        padding: 3em 1em;
-        text-align: center;
+        margin-bottom: 20px;
     }
 
-        .roadmap-section .example-header h1 {
-            color: #FFF;
-            font-weight: 300;
-            margin-bottom: 20px;
-        }
-
-        .roadmap-section .example-header p {
-            font-size: 12px;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            font-weight: 700;
-        }
-
-    .roadmap-section .container-fluid .row {
-        padding: 0 0 4em 0;
-    }
-
-    .roadmap-section .example-title {
-        text-align: center;
-        margin-bottom: 60px;
-        padding: 3em 0;
-        border-bottom: 1px solid #E4EAEC;
-    }
-
-        .roadmap-section .example-title ~ p {
-            margin: 0 auto;
-            font-size: 16px;
-            max-width: 400px;
-        }
-
-    .roadmap-section .timeline-new {
-        line-height: 1.4em;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        width: 100%;
-    }
-
-        .roadmap-section .timeline-new h1,
-        .roadmap-section .timeline-new h2,
-        .roadmap-section .timeline-new h3,
-        .roadmap-section .timeline-new h4,
-        .roadmap-section .timeline-new h5,
-        .roadmap-section .timeline-new h6 {
-            line-height: inherit;
-        }
-
-    .roadmap-section .timeline-item {
-        padding-left: 40px;
-        position: relative;
-    }
-
-        .roadmap-section .timeline-item:last-child {
-            padding-bottom: 0;
-        }
-
-    .roadmap-section .timeline-info {
-        position: relative;
-        top: 1px;
-        font-size: 14px;
-        font-weight: 700;
-        letter-spacing: 3px;
-        margin: 0 0 .5em 0;
+    .roadmap-section .example-header p {
+        font-size: 12px;
         text-transform: uppercase;
-        white-space: nowrap;
+        letter-spacing: 3px;
+        font-weight: 700;
     }
 
-    .roadmap-section .timeline-marker {
+.roadmap-section .container-fluid .row {
+    padding: 0 0 4em 0;
+}
+
+.roadmap-section .example-title {
+    text-align: center;
+    margin-bottom: 60px;
+    padding: 3em 0;
+    border-bottom: 1px solid #E4EAEC;
+}
+
+    .roadmap-section .example-title ~ p {
+        margin: 0 auto;
+        font-size: 16px;
+        max-width: 400px;
+    }
+
+.roadmap-section .timeline-new {
+    line-height: 1.4em;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+    .roadmap-section .timeline-new h1,
+    .roadmap-section .timeline-new h2,
+    .roadmap-section .timeline-new h3,
+    .roadmap-section .timeline-new h4,
+    .roadmap-section .timeline-new h5,
+    .roadmap-section .timeline-new h6 {
+        line-height: inherit;
+    }
+
+.roadmap-section .timeline-item {
+    padding-left: 40px;
+    position: relative;
+}
+
+    .roadmap-section .timeline-item:last-child {
+        padding-bottom: 0;
+    }
+
+.roadmap-section .timeline-info {
+    position: relative;
+    top: 1px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin: 0 0 .5em 0;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.roadmap-section .timeline-marker {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 15px;
+}
+
+    .roadmap-section .timeline-marker .before {
+        background: #2eb6f7;
+        border: 3px solid transparent;
+        border-radius: 100%;
+        display: block;
+        height: 15px;
         position: absolute;
-        top: 0;
-        bottom: 0;
+        top: 4px;
         left: 0;
         width: 15px;
+        transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
     }
 
-        .roadmap-section .timeline-marker .before {
-            background: #2eb6f7;
-            border: 3px solid transparent;
-            border-radius: 100%;
-            display: block;
-            height: 15px;
-            position: absolute;
-            top: 4px;
-            left: 0;
-            width: 15px;
-            transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
-        }
-
-        .roadmap-section .timeline-marker .after {
-            width: 3px;
-            background: #2eb6f7;
-            display: block;
-            position: absolute;
-            top: 18px;
-            bottom: -6px;
-            left: 6px;
-        }
+    .roadmap-section .timeline-marker .after {
+        width: 3px;
+        background: #2eb6f7;
+        display: block;
+        position: absolute;
+        top: 18px;
+        bottom: -6px;
+        left: 6px;
+    }
 
 .timeline-item:last-child .roadmap-section .timeline-marker:after {
     content: none;
@@ -1653,18 +1674,180 @@ html, body {
 
 /*--- Roadmap section ---*/
 
+/*--- Team section ---*/
+.team-section {
+    padding-top: 70px;
+}
+
+@media screen and (max-width: 1025px) {
+    .team-section {
+        padding-top: 50px;
+    }
+}
+
+@media screen and (max-width: 968px) {
+    .team-section {
+        padding-top: 30px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .team-section {
+        padding-top: 20px;
+    }
+}
+
+.team-section .team-title h1 {
+    color: #3D4351;
+    margin-top: 0;
+}
+
+.team-section .team-section--members {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 70px;
+}
+
+    .team-section .team-section--members .team-section--members--item .team-section--members--item--photo {
+        margin: 24px auto 0;
+        width: 128px;
+        height: 128px;
+        position: relative;
+    }
+
+        .team-section .team-section--members .team-section--members--item .team-section--members--item--photo img {
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+        }
+
+        .team-section .team-section--members .team-section--members--item .team-section--members--item--photo a {
+            height: 32px;
+            width: 32px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+
+            .team-section .team-section--members .team-section--members--item .team-section--members--item--photo a + a {
+                right: -20px;
+                bottom: 35px;
+            }
+
+    .team-section .team-section--members .team-section--members--item .team-section--members--item--name,
+    .team-section .team-section--members .team-section--members--item .team-section--members--item--position {
+        margin-top: 8px;
+        color: #252525;
+        text-align: center;
+    }
+
+    .team-section .team-section--members .team-section--members--item .team-section--members--item--name {
+        font-family: Open_Sans_Bold, sans-serif;
+        font-size: 14px;
+    }
+
+    .team-section .team-section--members .team-section--members--item .team-section--members--item--position {
+        font-family: Open_Sans, sans-serif;
+        font-size: 12px;
+    }
+
+    .team-section .team-section--members .team-section--members--item .team-section--members--item--description {
+        margin-top: 12px;
+        font-family: Open_Sans, sans-serif;
+        font-size: 14px;
+        color: rgba(10, 10, 10, 0.61);
+        text-align: center;
+        line-height: 20px;
+        overflow: hidden;
+        flex-grow: 1;
+    }
+
+    .team-section .team-section--members .team-section--members--item .team-section--members--item--sn {
+        margin-bottom: 16px;
+        margin-top: 16px;
+    }
+
+        .team-section .team-section--members .team-section--members--item .team-section--members--item--sn a + a {
+            margin-left: 8px;
+        }
+/*--- Team section ---*/
+
 /*--- Pie section ---*/
 .pie-section {
     position: relative;
     padding-top: 70px;
     padding-bottom: 50px;
+    background-color: #f2f2f2;
+}
+
+@media screen and (max-width: 1025px) {
+    .pie-section {
+        padding-top: 50px;
+    }
+}
+
+@media screen and (max-width: 968px) {
+    .team-section {
+        padding-top: 30px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .pie-section {
+        padding-top: 20px;
+    }
 }
 
 .token-chart {
-    width: 40%
+    width: 60%;
+}
+
+@media screen and (max-width: 1200px) {
+    .token-chart {
+        width: 100%;
+    }
 }
 
 /*--- Pie section ---*/
+
+
+/*--- Smart section ---*/
+.smart-section {
+    padding: 70px 0 50px;
+}
+
+@media screen and (max-width: 1025px) {
+    .smart-section {
+        padding-top: 50px;
+    }
+}
+
+@media screen and (max-width: 968px) {
+    .smart-section {
+        padding-top: 30px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .smart-section {
+        padding-top: 20px;
+    }
+}
+
+.smart-section .description {
+    margin: 0 auto 10px;
+    max-width: 700px;
+}
+
+.smart-section .container {
+    margin-top: 7px;
+}
+
+    .smart-section .container img {
+        max-width: 100%;
+    }
+/*--- Smart section ---*/
+
 
 /*--- Footer ---*/
 .landing-footer {
@@ -1683,6 +1866,26 @@ html, body {
 }
 
 /*--- Footer ---*/
+
+/*--- Investor ---*/
+.investor-lk {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    
+}
+
+.investor-lk .investor-form label {
+    font-size: 25px;
+    font-weight: 100;
+    color: #fff;
+}
+
+.investor-lk .investor-info span {
+    font-size: 40px;
+    font-weight: 300;
+    color: #fff;
+}
+
+/*--- Investor ---*/
 
 /*--- Utility ---*/
 .ease {
@@ -1751,4 +1954,8 @@ w-text-white {
 
 .w-opacity-5 {
     opacity: .5;
+}
+
+.hidden {
+    display: none;
 }
