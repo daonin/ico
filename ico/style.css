@@ -1787,7 +1787,7 @@ html, body {
 }
 
 @media screen and (max-width: 968px) {
-    .team-section {
+    .pie-section {
         padding-top: 30px;
     }
 }
@@ -1847,6 +1847,31 @@ html, body {
         max-width: 100%;
     }
 /*--- Smart section ---*/
+
+/*--- Contract section ---*/
+.contract-section {
+    padding: 70px 0 50px;
+    background-color: #f2f2f2;
+}
+
+@media screen and (max-width: 1025px) {
+    .contract-section {
+        padding-top: 50px;
+    }
+}
+
+@media screen and (max-width: 968px) {
+    .contract-section {
+        padding-top: 30px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .contract-section {
+        padding-top: 20px;
+    }
+}
+/*--- Contract section ---*/
 
 
 /*--- Footer ---*/

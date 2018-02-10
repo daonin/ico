@@ -43,7 +43,7 @@
             <div class="header-left col-12  col-sm-6 col-md-3">
                 <a class="header-logo" href="/">
                     <img class="main-logo" src="/images/header-logo.svg" alt="Викиум тренажеры для мозга">
-                </a>                
+                </a>
             </div>
             <div class="header-nav col-12  col-sm-6 col-md-7">
                 <label for="toggle" class="hamburger">&#9776;</label>
@@ -565,28 +565,98 @@
         </div>
     </section>
     <section class="smart-section">
-            <div class="container">
-                <div class="section-title d-flex justify-content-center">
-                    <h1>Смарт-контракт Github</h1>
+        <div class="container">
+            <div class="section-title d-flex justify-content-center">
+                <h1>Смарт-контракт Github</h1>
+            </div>
+            <div class="section-title d-flex justify-content-center">
+                <p class="description text-center mb-5">
+                    Мы публикуем наш исходные текст на Guthub, потому что хотим быть честными и открытыми.
+                </p>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 text-center">
+                    <!-- react-empty: 780 -->
+                    <!-- react-empty: 781 -->
+                    <img src="https://crowdsale.storiqa.com/static/media/github_992.9cb96083.png" alt="Demand" class="">
                 </div>
-                <div class="section-title d-flex justify-content-center">
-                    <p class="description text-center mb-5">
-                        Мы публикуем наш исходные текст на Guthub, потому что хотим быть честными и открытыми.
-                    </p>
-                </div>
-                <div class="row d-flex justify-content-center">
-                    <div class="col-12 text-center">
-                        <!-- react-empty: 780 -->
-                        <!-- react-empty: 781 -->
-                        <img src="https://crowdsale.storiqa.com/static/media/github_992.9cb96083.png" alt="Demand" class="">
+                <div class="col-12 mt-5 text-center">
+                    <div>
+                        <a class="w-btn w-btn--blue" href="https://github.com/Storiqa/ico_smart_contract" target="_blank">КОД НА Github</a>
                     </div>
-                    <div class="col-12 mt-5 text-center">
-                        <div>
-                            <a class="w-btn w-btn--blue" href="https://github.com/Storiqa/ico_smart_contract" target="_blank" class="button-empty text-white text-center open-sans-semibold">КОД НА Github</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contract-section">
+        <div class="container">
+            <div class="section-title d-flex justify-content-center">
+                <h1>Инвестировать</h1>
+            </div>
+            <div class="section-title d-flex justify-content-center">
+                <p class="description text-center mb-5">
+                    Простота - залог честности. Мы принимем только Эфир, чтобы вы сами могли выбирать способы его приобретения.
+                </p>
+            </div>
+            <div class="card text-center">
+                <div class="card-header">
+                    <ul class="nav nav-tabs card-header-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="address-tab" data-toggle="tab" href="#address" role="tab" aria-controls="address" aria-selected="true">Адрес</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="calc-tab" data-toggle="tab" href="#calc" role="tab" aria-controls="calc" aria-selected="false">Калькулятор</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane fade show active card" id="address" role="tabpanel" aria-labelledby="address-tab">
+                        <h5 class="card-title">Адрес смарт-контракта</h5>
+                        <p class="card-text">0xf230b790E05390FC8295F4d3F60332c93BEd42e2</p>
+                    </div>
+                    <div class="tab-pane fade card" id="calc" role="tabpanel" aria-labelledby="calc-tab">
+                        <h5 class="card-title">Введите число в любое поле и нажмите "РАССЧИТАТЬ"</h5>
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="input-group input-group-lg col-12 col-md-4">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroup-sizing-lg">ETH</span>
+                                    </div>
+                                    <input type="number" id="eth-input" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+                                </div>
+                                <div class="input-group input-group-lg col-12 col-md-4">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroup-sizing-lg">$</span>
+                                    </div>
+                                    <input type="number" id="usd-input" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+                                </div>
+                                <div class="input-group input-group-lg col-12 col-md-4">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroup-sizing-lg">ТОКЕНОВ</span>
+                                    </div>
+                                    <input type="number" id="token-input" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+                                </div>
+                                <div class="col-12 mt-5 text-center">
+                                    <div>
+                                        <a class="w-btn w-btn--blue" id="calculate-btn">РАССЧИТАТЬ</a>
+                                    </div>
+                                    <div>
+                                        <a href="" class="nav-link" id="clean-calculate-btn">Очистить</a>
+                                    </div>
+                                </div>
+                                <div class="alert alert-warning alert-dismissible fade" role="alert" id="calc-alert">
+                                    <strong>Ошибка!</strong> Необходимо заполнить одно поле.
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+        </div>
     </section>
     <footer class="container-fluid landing-footer ">
         <div class="row landing-footer__inner justify-content-center">

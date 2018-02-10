@@ -54,7 +54,7 @@
         if (mq.matches) {
             // window width is at least 1050px
             //$headerNav.removeClass('col-md-9');
-            $headerNav.addClass('col-md-7');            
+            $headerNav.addClass('col-md-7');
             $headerRight.addClass('col-md-2');
             $headerNav.addClass('col-12');
             $headerNav.addClass('col-sm-6');
@@ -77,7 +77,47 @@
             headerRow.appendChild(div);
         }
 
-    }
+    };
+
+    $('#calculate-btn').click(function () {
+        $('#calc-alert').removeClass('show');
+
+        var eth_in = $('#eth-input');
+        var eth = $('#eth-input').val();
+        var usd_in = $('#usd-input');
+        var usd = $('#usd-input').val();
+        var token_in = $('#token-input');
+        var token = $('#token-input').val();
+        var eth_usd_price = 892.97; //брать из json
+        var token_eth_price = 0.02; //брать из json
+
+        if (eth && !usd && !token) {
+            usd_in.val((eth * eth_usd_price).toFixed(2));
+            token_in.val(Math.round(eth / token_eth_price));
+        }
+        else if (!eth && usd && !token) {
+            eth = usd / eth_usd_price;
+            eth_in.val((usd / eth_usd_price).toFixed(2));
+            token_in.val((Math.round(eth / token_eth_price)));
+        }
+        else if (!eth && !usd && token) {
+            eth = token * token_eth_price;
+            eth_in.val((token * token_eth_price).toFixed(2));
+            usd_in.val((eth * eth_usd_price).toFixed(2));
+        }
+        else {
+            $('#calc-alert').addClass('show');
+        }
+    });
+
+    $('#clean-calculate-btn').click(function (event) {
+        event.preventDefault();
+        $('#calc-alert').removeClass('show');
+        $('#eth-input').val('');
+        $('#usd-input').val('');
+        $('#token-input').val('');
+
+    });
 });
 
 function number_format(number, decimals, dec_point, thousands_sep) {
