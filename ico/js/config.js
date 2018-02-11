@@ -8,5 +8,10 @@
     goals: {
         soft_cap: 7000000,
         hard_cap: 30000000
+    },
+    money: {
+        token_eth_price: 0,
+        eth_usd_price: 0,
+        raised: 0
     }
 }

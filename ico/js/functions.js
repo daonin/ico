@@ -88,8 +88,8 @@
         var usd = $('#usd-input').val();
         var token_in = $('#token-input');
         var token = $('#token-input').val();
-        var eth_usd_price = 892.97; //брать из json
-        var token_eth_price = 0.02; //брать из json
+        var eth_usd_price = appConfig.money.eth_usd_price; //брать из json
+        var token_eth_price = appConfig.money.token_eth_price; //брать из json
 
         if (eth && !usd && !token) {
             usd_in.val((eth * eth_usd_price).toFixed(2));

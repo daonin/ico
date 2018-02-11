@@ -46,7 +46,12 @@
     /*JSON Part*/
     function parseAndFill(data) {
 
-        var raised = data.raised;
+        appConfig.money.raised = data.raised;
+        appConfig.money.token_eth_price = data.token_eth_price;
+        appConfig.money.eth_usd_price = data.eth_usd_price;
+
+        var raised = appConfig.money.raised * appConfig.money.eth_usd_price;
+        //var raised = data.raised;
 
         var formattedRaised = number_format(raised, 2, ',', ' ');
         $('.raised__text').text("$" + formattedRaised);
@@ -63,6 +68,11 @@
 
         $('div.thermometer-item').removeAttr('style');
         $('div.thermometer-item').attr('style', cssString);
+
+        var price = appConfig.money.token_eth_price * appConfig.money.eth_usd_price;
+        var formattedPrice = number_format(price, 2, ',', ' ');
+
+        $('#token-price-value').text("$" + formattedPrice);
     };
 
     $.ajax({
